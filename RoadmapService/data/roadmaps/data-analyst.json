@@ -1,0 +1,145 @@
+{
+    "career_id": "data-analyst",
+    "title": "Data Analyst Roadmap",
+    "description": "Interpret data to help businesses make decisions",
+    "category": "data",
+    "nodes": [
+        {
+            "id": "excel",
+            "label": "Excel & Spreadsheets",
+            "description": "Advanced Excel, pivot tables, and formulas",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "Excel Full Course",
+                    "url": "https://www.youtube.com/watch?v=Vl0H-qTclOg",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "3h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "sql",
+            "label": "SQL for Analysis",
+            "description": "Query databases and extract insights",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "SQL for Data Analysis",
+                    "url": "https://www.youtube.com/watch?v=HXV3zeQKqGY",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "4h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "statistics",
+            "label": "Statistics Fundamentals",
+            "description": "Descriptive and inferential statistics",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "Statistics Course",
+                    "url": "https://www.khanacademy.org/math/statistics-probability",
+                    "type": "course",
+                    "platform": "Khan Academy",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "python",
+            "label": "Python for Analysis",
+            "description": "Pandas, NumPy, and data manipulation",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "Python for Data Analysis",
+                    "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "4h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "visualization",
+            "label": "Data Visualization",
+            "description": "Tableau, Power BI, or Python visualization",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "Tableau Full Course",
+                    "url": "https://www.youtube.com/watch?v=aHaOIvR00So",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "4h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "storytelling",
+            "label": "Data Storytelling",
+            "description": "Present insights effectively to stakeholders",
+            "estimatedTime": "2 weeks",
+            "resources": [
+                {
+                    "title": "Data Storytelling",
+                    "url": "https://www.youtube.com/watch?v=8EMW7io4rSI",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "1h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "dashboards",
+            "label": "Dashboard Building",
+            "description": "Create interactive dashboards and reports",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "Dashboard Design",
+                    "url": "https://www.youtube.com/watch?v=K74_FNvrdfc",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "2h",
+                    "free": true
+                }
+            ]
+        }
+    ],
+    "edges": [
+        {
+            "source": "excel",
+            "target": "sql"
+        },
+        {
+            "source": "sql",
+            "target": "statistics"
+        },
+        {
+            "source": "statistics",
+            "target": "python"
+        },
+        {
+            "source": "python",
+            "target": "visualization"
+        },
+        {
+            "source": "visualization",
+            "target": "storytelling"
+        },
+        {
+            "source": "storytelling",
+            "target": "dashboards"
+        }
+    ]
+}

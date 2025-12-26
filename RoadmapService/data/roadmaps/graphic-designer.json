@@ -1,0 +1,152 @@
+{
+    "career_id": "graphic-designer",
+    "title": "Graphic Designer Roadmap",
+    "description": "Create visual content for brands, marketing, and digital products",
+    "category": "creative",
+    "context": "Graphic Designers create visual content that communicates messages and builds brand identity. You'll design logos, marketing materials, social media graphics, and digital assets. This role combines artistic creativity with technical skills in design software. It's perfect for visual thinkers who want to bring ideas to life through design.",
+    "career_type": "Creative Design",
+    "nodes": [
+        {
+            "id": "design-principles",
+            "label": "Design Fundamentals",
+            "description": "Color theory, typography, composition, and visual hierarchy",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "Design Fundamentals",
+                    "url": "https://www.youtube.com/watch?v=YqQx75OPRa0",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "2h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "adobe-photoshop",
+            "label": "Adobe Photoshop",
+            "description": "Photo editing, compositing, and raster graphics",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "Photoshop for Beginners",
+                    "url": "https://www.youtube.com/watch?v=IyR_uYsRdPs",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "3h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "adobe-illustrator",
+            "label": "Adobe Illustrator",
+            "description": "Vector graphics, logo design, and illustrations",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "Illustrator Complete Course",
+                    "url": "https://www.youtube.com/watch?v=Ib8UBwu3yGA",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "4h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "branding",
+            "label": "Branding & Identity",
+            "description": "Logo design, brand guidelines, and visual identity systems",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "Logo Design Masterclass",
+                    "url": "https://www.youtube.com/watch?v=5C4s4L0pDfY",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "2h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "layout-design",
+            "label": "Layout Design",
+            "description": "Print design, marketing materials, and publication design",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "Layout Design Basics",
+                    "url": "https://www.youtube.com/watch?v=a5KYlHNKQB8",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "30m",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "digital-design",
+            "label": "Digital & Web Design",
+            "description": "Social media graphics, web banners, and digital assets",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "Social Media Design",
+                    "url": "https://www.youtube.com/watch?v=2QwVi0fEAKA",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "1h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "portfolio",
+            "label": "Build Your Portfolio",
+            "description": "Create a professional portfolio showcasing your best work",
+            "estimatedTime": "Ongoing",
+            "resources": [
+                {
+                    "title": "Design Portfolio Tips",
+                    "url": "https://www.youtube.com/watch?v=jOSFXWRl8Wg",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "15m",
+                    "free": true
+                }
+            ]
+        }
+    ],
+    "edges": [
+        {
+            "source": "design-principles",
+            "target": "adobe-photoshop"
+        },
+        {
+            "source": "design-principles",
+            "target": "adobe-illustrator"
+        },
+        {
+            "source": "adobe-photoshop",
+            "target": "branding"
+        },
+        {
+            "source": "adobe-illustrator",
+            "target": "branding"
+        },
+        {
+            "source": "branding",
+            "target": "layout-design"
+        },
+        {
+            "source": "layout-design",
+            "target": "digital-design"
+        },
+        {
+            "source": "digital-design",
+            "target": "portfolio"
+        }
+    ]
+}

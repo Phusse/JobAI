@@ -1,0 +1,163 @@
+{
+    "career_id": "solutions-architect",
+    "title": "Solutions Architect Roadmap",
+    "description": "Design complex technical solutions to meet business needs, bridging technology and business",
+    "category": "architecture",
+    "context": "Solutions Architects design end-to-end technical solutions for business problems. You'll work with stakeholders to understand requirements, evaluate technologies, and create architectures that are scalable, secure, and cost-effective. This senior role requires both deep technical knowledge and excellent communication skills to translate between business and engineering teams.",
+    "career_type": "Technical Leadership",
+    "is_role": true,
+    "role_requirements": {
+        "experience_years": "5-8+ years in software development or infrastructure",
+        "prerequisite_paths": [
+            "backend-dev",
+            "cloud-architect",
+            "devops-engineer"
+        ],
+        "soft_skills": [
+            "Communication",
+            "Systems Thinking",
+            "Business Acumen",
+            "Stakeholder Management"
+        ],
+        "technical_foundation": "Broad experience across multiple technology domains"
+    },
+    "nodes": [
+        {
+            "id": "technical-breadth",
+            "label": "Technical Breadth",
+            "description": "Gain experience across frontend, backend, databases, and infrastructure",
+            "estimatedTime": "3-5 years",
+            "resources": [
+                {
+                    "title": "Full Stack Path",
+                    "url": "https://www.youtube.com/watch?v=nu_pCVPKzTk",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "4h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "cloud-expertise",
+            "label": "Cloud Platform Expertise",
+            "description": "Deep knowledge of AWS, Azure, or GCP services",
+            "estimatedTime": "6-12 months",
+            "resources": [
+                {
+                    "title": "AWS Solutions Architect",
+                    "url": "https://www.youtube.com/watch?v=Ia-UEYYR44s",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "10h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "architecture-patterns",
+            "label": "Architecture Patterns",
+            "description": "Microservices, event-driven, serverless, and distributed systems",
+            "estimatedTime": "3-4 months",
+            "resources": [
+                {
+                    "title": "System Design Primer",
+                    "url": "https://github.com/donnemartin/system-design-primer",
+                    "type": "docs",
+                    "platform": "GitHub",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "requirements",
+            "label": "Requirements Gathering",
+            "description": "Translate business needs into technical requirements",
+            "estimatedTime": "2-3 months",
+            "resources": [
+                {
+                    "title": "Requirements Engineering",
+                    "url": "https://www.youtube.com/watch?v=V-UvSKe8Bck",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "1h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "documentation",
+            "label": "Architecture Documentation",
+            "description": "Create architecture diagrams, RFCs, and decision records",
+            "estimatedTime": "1-2 months",
+            "resources": [
+                {
+                    "title": "Architecture Diagramming",
+                    "url": "https://www.youtube.com/watch?v=f6XhS2A_rcc",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "30m",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "cost-optimization",
+            "label": "Cost Optimization",
+            "description": "Design cost-effective solutions and manage cloud spending",
+            "estimatedTime": "1-2 months",
+            "resources": [
+                {
+                    "title": "Cloud Cost Optimization",
+                    "url": "https://www.youtube.com/watch?v=XQFo6xhHmL0",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "1h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "certifications",
+            "label": "Cloud Certifications",
+            "description": "AWS Solutions Architect, Azure Solutions Architect, or GCP Cloud Architect",
+            "estimatedTime": "2-3 months",
+            "resources": [
+                {
+                    "title": "AWS SA Professional",
+                    "url": "https://www.youtube.com/watch?v=Ia-UEYYR44s",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "10h",
+                    "free": true
+                }
+            ]
+        }
+    ],
+    "edges": [
+        {
+            "source": "technical-breadth",
+            "target": "cloud-expertise"
+        },
+        {
+            "source": "cloud-expertise",
+            "target": "architecture-patterns"
+        },
+        {
+            "source": "architecture-patterns",
+            "target": "requirements"
+        },
+        {
+            "source": "requirements",
+            "target": "documentation"
+        },
+        {
+            "source": "documentation",
+            "target": "cost-optimization"
+        },
+        {
+            "source": "cost-optimization",
+            "target": "certifications"
+        }
+    ]
+}

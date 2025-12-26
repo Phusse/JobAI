@@ -1,0 +1,148 @@
+{
+    "career_id": "marketing-analyst",
+    "title": "Marketing Analyst Roadmap",
+    "description": "Analyze marketing data to optimize campaigns and understand customer behavior",
+    "category": "business",
+    "context": "Marketing Analysts use data to make marketing more effective. You'll analyze campaign performance, track customer behavior, run A/B tests, and create reports that drive marketing strategy. This role combines marketing knowledge with analytical skills, making it ideal for those who love both numbers and understanding human behavior.",
+    "career_type": "Marketing Analytics",
+    "nodes": [
+        {
+            "id": "marketing-basics",
+            "label": "Marketing Fundamentals",
+            "description": "Marketing concepts, channels, and customer journey",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "Marketing Fundamentals",
+                    "url": "https://www.youtube.com/watch?v=nU-IIXBWlS4",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "4h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "excel",
+            "label": "Excel for Analysis",
+            "description": "Pivot tables, formulas, and data manipulation",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "Excel for Marketing",
+                    "url": "https://www.youtube.com/watch?v=Vl0H-qTclOg",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "3h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "google-analytics",
+            "label": "Google Analytics",
+            "description": "Website analytics, user behavior, and conversion tracking",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "Google Analytics 4",
+                    "url": "https://www.youtube.com/watch?v=uXv3JoGMvNY",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "2h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "sql",
+            "label": "SQL for Marketing Data",
+            "description": "Query databases to extract marketing insights",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "SQL for Data Analysis",
+                    "url": "https://www.youtube.com/watch?v=HXV3zeQKqGY",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "4h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "ab-testing",
+            "label": "A/B Testing",
+            "description": "Experiment design, statistical significance, and optimization",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "A/B Testing Tutorial",
+                    "url": "https://www.youtube.com/watch?v=XDoAglqd7ss",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "1h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "visualization",
+            "label": "Data Visualization",
+            "description": "Create dashboards with Tableau, Looker, or Power BI",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "Tableau for Marketing",
+                    "url": "https://www.youtube.com/watch?v=aHaOIvR00So",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "4h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "attribution",
+            "label": "Attribution Modeling",
+            "description": "Understand which channels drive conversions",
+            "estimatedTime": "2 weeks",
+            "resources": [
+                {
+                    "title": "Marketing Attribution",
+                    "url": "https://www.youtube.com/watch?v=TXb3vvpCEDY",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "30m",
+                    "free": true
+                }
+            ]
+        }
+    ],
+    "edges": [
+        {
+            "source": "marketing-basics",
+            "target": "excel"
+        },
+        {
+            "source": "excel",
+            "target": "google-analytics"
+        },
+        {
+            "source": "google-analytics",
+            "target": "sql"
+        },
+        {
+            "source": "sql",
+            "target": "ab-testing"
+        },
+        {
+            "source": "ab-testing",
+            "target": "visualization"
+        },
+        {
+            "source": "visualization",
+            "target": "attribution"
+        }
+    ]
+}

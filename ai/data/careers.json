@@ -61,6 +61,21 @@
             "id": "emerging",
             "name": "Emerging Tech",
             "icon": "🚀"
+        },
+        {
+            "id": "social",
+            "name": "Social & Content",
+            "icon": "📱"
+        },
+        {
+            "id": "growth",
+            "name": "E-commerce & Growth",
+            "icon": "📈"
+        },
+        {
+            "id": "support",
+            "name": "Customer Success",
+            "icon": "🤝"
         }
     ],
     "careers": [
@@ -1118,6 +1133,270 @@
                 "Process Improvement"
             ],
             "salary_range": "$60,000 - $110,000",
+            "growth_outlook": "Medium"
+        },
+        {
+            "id": "social-media-manager",
+            "title": "Social Media Manager",
+            "category": "social",
+            "description": "Creates and manages social media strategy across platforms. Builds community, engages audiences, and grows brand presence.",
+            "traits": {
+                "creative": 2.5,
+                "communication": 2.5,
+                "social": 2.0,
+                "visual": 1.5,
+                "adaptable": 1.0
+            },
+            "skills": [
+                "Content Creation",
+                "Community Management",
+                "Analytics",
+                "Scheduling Tools",
+                "Trend Analysis"
+            ],
+            "salary_range": "$40,000 - $85,000",
+            "growth_outlook": "High"
+        },
+        {
+            "id": "content-strategist",
+            "title": "Content Strategist",
+            "category": "social",
+            "description": "Plans and oversees content creation to achieve business goals. Defines messaging, tone, and content distribution.",
+            "traits": {
+                "strategic": 2.5,
+                "communication": 2.0,
+                "creative": 2.0,
+                "analytical": 1.5,
+                "organizing": 1.0
+            },
+            "skills": [
+                "Content Planning",
+                "SEO",
+                "Editorial Calendars",
+                "Brand Voice",
+                "Analytics"
+            ],
+            "salary_range": "$55,000 - $110,000",
+            "growth_outlook": "High"
+        },
+        {
+            "id": "seo-specialist",
+            "title": "SEO Specialist",
+            "category": "social",
+            "description": "Optimizes websites and content to rank higher in search engines. Combines technical knowledge with content understanding.",
+            "traits": {
+                "analytical": 2.5,
+                "data-driven": 2.0,
+                "technical": 1.5,
+                "pattern-recognition": 1.5,
+                "curious": 1.0
+            },
+            "skills": [
+                "Keyword Research",
+                "Technical SEO",
+                "Link Building",
+                "Google Analytics",
+                "Content Optimization"
+            ],
+            "salary_range": "$45,000 - $95,000",
+            "growth_outlook": "High"
+        },
+        {
+            "id": "community-manager",
+            "title": "Community Manager",
+            "category": "social",
+            "description": "Builds and nurtures online communities around brands or products. Moderates discussions and fosters engagement.",
+            "traits": {
+                "communication": 2.5,
+                "team-player": 2.0,
+                "social": 2.0,
+                "mentoring": 1.5,
+                "collaboration": 1.0
+            },
+            "skills": [
+                "Community Building",
+                "Moderation",
+                "Event Planning",
+                "Conflict Resolution",
+                "Engagement"
+            ],
+            "salary_range": "$40,000 - $80,000",
+            "growth_outlook": "Medium"
+        },
+        {
+            "id": "copywriter",
+            "title": "Copywriter",
+            "category": "social",
+            "description": "Writes persuasive copy for ads, websites, and marketing materials. Combines creativity with understanding of psychology.",
+            "traits": {
+                "creative": 2.5,
+                "communication": 2.5,
+                "documentation": 1.5,
+                "user-centric": 1.5,
+                "analytical": 1.0
+            },
+            "skills": [
+                "Persuasive Writing",
+                "Brand Voice",
+                "Ad Copy",
+                "Email Marketing",
+                "Storytelling"
+            ],
+            "salary_range": "$45,000 - $100,000",
+            "growth_outlook": "Medium"
+        },
+        {
+            "id": "growth-hacker",
+            "title": "Growth Hacker",
+            "category": "growth",
+            "description": "Uses creative, data-driven strategies to rapidly grow user base. Experiments constantly to find scalable growth channels.",
+            "traits": {
+                "experimental": 2.5,
+                "analytical": 2.0,
+                "innovative": 2.0,
+                "data-driven": 1.5,
+                "adaptable": 1.0
+            },
+            "skills": [
+                "A/B Testing",
+                "Analytics",
+                "Marketing Automation",
+                "Viral Loops",
+                "Conversion Optimization"
+            ],
+            "salary_range": "$60,000 - $130,000",
+            "growth_outlook": "High"
+        },
+        {
+            "id": "ecommerce-manager",
+            "title": "E-commerce Manager",
+            "category": "growth",
+            "description": "Manages online store operations and strategy. Optimizes product listings, pricing, and customer experience.",
+            "traits": {
+                "business": 2.0,
+                "analytical": 2.0,
+                "strategic": 1.5,
+                "user-centric": 1.5,
+                "organizing": 1.0
+            },
+            "skills": [
+                "Shopify/WooCommerce",
+                "Product Management",
+                "Pricing Strategy",
+                "Inventory",
+                "Customer Experience"
+            ],
+            "salary_range": "$55,000 - $120,000",
+            "growth_outlook": "High"
+        },
+        {
+            "id": "conversion-optimizer",
+            "title": "Conversion Rate Optimizer",
+            "category": "growth",
+            "description": "Improves website conversion rates through testing and analysis. Turns visitors into customers through data-driven changes.",
+            "traits": {
+                "analytical": 2.5,
+                "data-driven": 2.0,
+                "experimental": 1.5,
+                "user-centric": 1.5,
+                "testing": 1.0
+            },
+            "skills": [
+                "A/B Testing",
+                "User Research",
+                "Analytics",
+                "UX Principles",
+                "Statistical Analysis"
+            ],
+            "salary_range": "$60,000 - $110,000",
+            "growth_outlook": "High"
+        },
+        {
+            "id": "video-editor",
+            "title": "Video Editor",
+            "category": "creative",
+            "description": "Edits and produces video content for various platforms. Combines technical skill with storytelling ability.",
+            "traits": {
+                "visual": 2.5,
+                "creative": 2.5,
+                "tangible": 1.5,
+                "detail-oriented": 1.5,
+                "technical": 1.0
+            },
+            "skills": [
+                "Premiere Pro",
+                "After Effects",
+                "DaVinci Resolve",
+                "Color Grading",
+                "Motion Graphics"
+            ],
+            "salary_range": "$40,000 - $90,000",
+            "growth_outlook": "High"
+        },
+        {
+            "id": "podcast-producer",
+            "title": "Podcast Producer",
+            "category": "creative",
+            "description": "Produces and manages podcast content. Handles recording, editing, publishing, and audience growth.",
+            "traits": {
+                "creative": 2.0,
+                "communication": 2.0,
+                "organizing": 1.5,
+                "technical": 1.5,
+                "social": 1.0
+            },
+            "skills": [
+                "Audio Editing",
+                "Content Planning",
+                "Interview Skills",
+                "Distribution",
+                "Audience Growth"
+            ],
+            "salary_range": "$40,000 - $85,000",
+            "growth_outlook": "High"
+        },
+        {
+            "id": "customer-success-manager",
+            "title": "Customer Success Manager",
+            "category": "support",
+            "description": "Ensures customers achieve their goals using the product. Builds relationships and reduces churn.",
+            "traits": {
+                "communication": 2.5,
+                "team-player": 2.0,
+                "collaboration": 2.0,
+                "mentoring": 1.5,
+                "business": 1.0
+            },
+            "skills": [
+                "Relationship Building",
+                "Product Knowledge",
+                "Onboarding",
+                "Retention",
+                "Account Management"
+            ],
+            "salary_range": "$50,000 - $100,000",
+            "growth_outlook": "High"
+        },
+        {
+            "id": "tech-support-specialist",
+            "title": "Technical Support Specialist",
+            "category": "support",
+            "description": "Helps customers solve technical problems. Combines technical knowledge with communication skills.",
+            "traits": {
+                "communication": 2.0,
+                "technical": 2.0,
+                "team-player": 1.5,
+                "investigative": 1.5,
+                "thorough": 1.0
+            },
+            "skills": [
+                "Troubleshooting",
+                "Documentation",
+                "Ticketing Systems",
+                "Product Knowledge",
+                "Customer Service"
+            ],
+            "salary_range": "$40,000 - $75,000",
             "growth_outlook": "Medium"
         }
     ]

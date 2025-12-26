@@ -77,7 +77,7 @@ export const Features = () => {
                         </p>
                     </motion.div>
 
-                    <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                    <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
                         {steps.map((step, i) => (
                             <motion.div
                                 key={step.number}
@@ -87,13 +87,11 @@ export const Features = () => {
                                 transition={{ delay: i * 0.1 }}
                                 className="card-glass p-8 text-center relative group"
                             >
-                                <div className="text-5xl font-bold text-gradient opacity-20 absolute top-4 right-4">
+                                <div className="w-14 h-14 rounded-full bg-gradient-to-br from-[rgb(var(--accent))] to-teal-400 flex items-center justify-center text-white font-bold text-xl mx-auto mb-5 shadow-lg shadow-[rgb(var(--accent))]/20">
                                     {step.number}
                                 </div>
-                                <div className="relative">
-                                    <h3 className="heading-4 mb-3">{step.title}</h3>
-                                    <p className="text-sm text-[rgb(var(--text-muted))]">{step.description}</p>
-                                </div>
+                                <h3 className="heading-4 mb-3">{step.title}</h3>
+                                <p className="text-sm text-[rgb(var(--text-muted))] leading-relaxed">{step.description}</p>
                             </motion.div>
                         ))}
                     </div>

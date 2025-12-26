@@ -1,0 +1,152 @@
+{
+    "career_id": "security-engineer",
+    "title": "Security Engineer Roadmap",
+    "description": "Build secure systems and implement security controls across infrastructure",
+    "category": "security",
+    "context": "Security Engineers design and implement security measures to protect systems, data, and users. Unlike penetration testers who find vulnerabilities, security engineers build defenses. You'll work on encryption, identity management, security tooling, and compliance. This role requires both coding skills and deep security knowledge.",
+    "career_type": "Defensive Security",
+    "nodes": [
+        {
+            "id": "security-fundamentals",
+            "label": "Security Fundamentals",
+            "description": "CIA triad, threat modeling, security principles",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "Cybersecurity Basics",
+                    "url": "https://www.youtube.com/watch?v=hXSFdwIOfnE",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "2h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "networking",
+            "label": "Network Security",
+            "description": "Firewalls, VPNs, network segmentation, and secure architecture",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "Network Security",
+                    "url": "https://www.youtube.com/watch?v=E03gh1huvW4",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "3h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "cryptography",
+            "label": "Cryptography",
+            "description": "Encryption, hashing, PKI, TLS, and key management",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "Cryptography Course",
+                    "url": "https://www.youtube.com/watch?v=JoeiLuFNBc4",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "2h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "iam",
+            "label": "Identity & Access Management",
+            "description": "OAuth, SAML, SSO, RBAC, and zero trust architecture",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "IAM Fundamentals",
+                    "url": "https://www.youtube.com/watch?v=996OiexHze0",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "1h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "secure-coding",
+            "label": "Secure Coding Practices",
+            "description": "OWASP guidelines, code review, and SAST/DAST tools",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "Secure Coding",
+                    "url": "https://www.youtube.com/watch?v=F5W3yLi3lRM",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "1.5h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "cloud-security",
+            "label": "Cloud Security",
+            "description": "AWS/Azure/GCP security services, misconfigurations, and compliance",
+            "estimatedTime": "4-6 weeks",
+            "resources": [
+                {
+                    "title": "AWS Security Best Practices",
+                    "url": "https://www.youtube.com/watch?v=IfPc4Gva6vA",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "2h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "security-automation",
+            "label": "Security Automation",
+            "description": "SIEM, SOAR, and automated security workflows",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "Security Automation",
+                    "url": "https://www.youtube.com/watch?v=Tr8MYJD8oFI",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "2h",
+                    "free": true
+                }
+            ]
+        }
+    ],
+    "edges": [
+        {
+            "source": "security-fundamentals",
+            "target": "networking"
+        },
+        {
+            "source": "security-fundamentals",
+            "target": "cryptography"
+        },
+        {
+            "source": "networking",
+            "target": "iam"
+        },
+        {
+            "source": "cryptography",
+            "target": "secure-coding"
+        },
+        {
+            "source": "iam",
+            "target": "cloud-security"
+        },
+        {
+            "source": "secure-coding",
+            "target": "cloud-security"
+        },
+        {
+            "source": "cloud-security",
+            "target": "security-automation"
+        }
+    ]
+}

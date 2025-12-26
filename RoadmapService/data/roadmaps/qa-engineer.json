@@ -1,0 +1,126 @@
+{
+    "career_id": "qa-engineer",
+    "title": "QA Engineer Roadmap",
+    "description": "Test software to ensure quality and find bugs",
+    "category": "quality",
+    "nodes": [
+        {
+            "id": "testing-fundamentals",
+            "label": "Testing Fundamentals",
+            "description": "Testing types, methodologies, and SDLC",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "Software Testing Fundamentals",
+                    "url": "https://www.youtube.com/watch?v=oLc9gVM8FBM",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "3h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "test-planning",
+            "label": "Test Planning",
+            "description": "Test plans, test cases, and test strategies",
+            "estimatedTime": "2 weeks",
+            "resources": [
+                {
+                    "title": "Writing Test Cases",
+                    "url": "https://www.youtube.com/watch?v=IBRsW-h_knA",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "1h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "manual-testing",
+            "label": "Manual Testing",
+            "description": "Exploratory testing and bug reporting",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "Manual Testing Tutorial",
+                    "url": "https://www.youtube.com/watch?v=RbSlW8jZFe8",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "2h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "api-testing",
+            "label": "API Testing",
+            "description": "Postman, REST API testing, and automation",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "API Testing with Postman",
+                    "url": "https://www.youtube.com/watch?v=VywxIQ2ZXw4",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "2h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "automation-basics",
+            "label": "Test Automation Basics",
+            "description": "Introduction to Selenium and automation frameworks",
+            "estimatedTime": "4-6 weeks",
+            "resources": [
+                {
+                    "title": "Selenium Tutorial",
+                    "url": "https://www.youtube.com/watch?v=j7VZsCCnptM",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "4h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "bug-tracking",
+            "label": "Bug Tracking & Tools",
+            "description": "Jira, Bugzilla, and defect management",
+            "estimatedTime": "1-2 weeks",
+            "resources": [
+                {
+                    "title": "Jira Tutorial",
+                    "url": "https://www.youtube.com/watch?v=GWxMTvRGIpc",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "1h",
+                    "free": true
+                }
+            ]
+        }
+    ],
+    "edges": [
+        {
+            "source": "testing-fundamentals",
+            "target": "test-planning"
+        },
+        {
+            "source": "test-planning",
+            "target": "manual-testing"
+        },
+        {
+            "source": "manual-testing",
+            "target": "api-testing"
+        },
+        {
+            "source": "api-testing",
+            "target": "automation-basics"
+        },
+        {
+            "source": "automation-basics",
+            "target": "bug-tracking"
+        }
+    ]
+}

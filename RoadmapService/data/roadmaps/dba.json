@@ -1,0 +1,152 @@
+{
+    "career_id": "dba",
+    "title": "Database Administrator Roadmap",
+    "description": "Manage databases to ensure data is stored securely, efficiently, and reliably",
+    "category": "infrastructure",
+    "context": "Database Administrators (DBAs) are responsible for the performance, integrity, and security of databases. You'll handle backups, recovery, optimization, and access control. While cloud-managed databases are growing, skilled DBAs who understand both traditional and cloud databases remain in high demand, especially in enterprises with large data footprints.",
+    "career_type": "Data Management",
+    "nodes": [
+        {
+            "id": "sql-fundamentals",
+            "label": "SQL Fundamentals",
+            "description": "Advanced SQL queries, joins, subqueries, and window functions",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "SQL Full Course",
+                    "url": "https://www.youtube.com/watch?v=HXV3zeQKqGY",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "4h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "database-design",
+            "label": "Database Design",
+            "description": "Normalization, ER diagrams, schema design, and data modeling",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "Database Design",
+                    "url": "https://www.youtube.com/watch?v=ztHopE5Wnpc",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "3h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "rdbms",
+            "label": "Relational Databases",
+            "description": "PostgreSQL, MySQL, or SQL Server administration",
+            "estimatedTime": "4-6 weeks",
+            "resources": [
+                {
+                    "title": "PostgreSQL Tutorial",
+                    "url": "https://www.youtube.com/watch?v=qw--VYLpxG4",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "4h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "nosql",
+            "label": "NoSQL Databases",
+            "description": "MongoDB, Redis, Cassandra, and when to use them",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "MongoDB Tutorial",
+                    "url": "https://www.youtube.com/watch?v=ofme2o29ngU",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "3h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "performance",
+            "label": "Performance Tuning",
+            "description": "Query optimization, indexing strategies, and execution plans",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "SQL Performance Tuning",
+                    "url": "https://www.youtube.com/watch?v=BHwzDmr6d7s",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "1h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "backup-recovery",
+            "label": "Backup & Recovery",
+            "description": "Backup strategies, point-in-time recovery, and disaster recovery",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "Database Backup Strategies",
+                    "url": "https://www.youtube.com/watch?v=FzlpwoeSrE0",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "30m",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "cloud-databases",
+            "label": "Cloud Databases",
+            "description": "RDS, Aurora, Cloud SQL, and managed database services",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "AWS RDS Tutorial",
+                    "url": "https://www.youtube.com/watch?v=GvMTyHhhQJI",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "1h",
+                    "free": true
+                }
+            ]
+        }
+    ],
+    "edges": [
+        {
+            "source": "sql-fundamentals",
+            "target": "database-design"
+        },
+        {
+            "source": "database-design",
+            "target": "rdbms"
+        },
+        {
+            "source": "database-design",
+            "target": "nosql"
+        },
+        {
+            "source": "rdbms",
+            "target": "performance"
+        },
+        {
+            "source": "performance",
+            "target": "backup-recovery"
+        },
+        {
+            "source": "backup-recovery",
+            "target": "cloud-databases"
+        },
+        {
+            "source": "nosql",
+            "target": "cloud-databases"
+        }
+    ]
+}

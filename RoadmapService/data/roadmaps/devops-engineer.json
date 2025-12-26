@@ -1,0 +1,238 @@
+{
+    "career_id": "devops-engineer",
+    "title": "DevOps Engineer Roadmap",
+    "description": "Master CI/CD, infrastructure automation, and cloud operations",
+    "category": "infrastructure",
+    "icon": null,
+    "nodes": [
+        {
+            "id": "linux",
+            "label": "Linux Fundamentals",
+            "description": "Linux commands, shell scripting, and system administration",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "Linux Full Course",
+                    "url": "https://www.youtube.com/watch?v=wBp0Rb-ZJak",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "5h",
+                    "free": true
+                },
+                {
+                    "title": "Linux Journey",
+                    "url": "https://linuxjourney.com/",
+                    "type": "course",
+                    "platform": "Linux Journey",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "scripting",
+            "label": "Scripting (Bash/Python)",
+            "description": "Automation scripting with Bash and Python",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "Bash Scripting Tutorial",
+                    "url": "https://www.youtube.com/watch?v=tK9Oc6AEnR4",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "2h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "git",
+            "label": "Git & Version Control",
+            "description": "Git workflows, branching strategies, and GitOps",
+            "estimatedTime": "1 week",
+            "resources": [
+                {
+                    "title": "Git for DevOps",
+                    "url": "https://www.youtube.com/watch?v=RGOj5yH7evk",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "1h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "docker",
+            "label": "Docker & Containers",
+            "description": "Containerization, Dockerfile, Docker Compose",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "Docker Full Course",
+                    "url": "https://www.youtube.com/watch?v=fqMOX6JJhGo",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "2h",
+                    "free": true
+                },
+                {
+                    "title": "Docker Documentation",
+                    "url": "https://docs.docker.com/",
+                    "type": "docs",
+                    "platform": "Docker",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "kubernetes",
+            "label": "Kubernetes",
+            "description": "Container orchestration, pods, services, deployments",
+            "estimatedTime": "4-6 weeks",
+            "resources": [
+                {
+                    "title": "Kubernetes Full Course",
+                    "url": "https://www.youtube.com/watch?v=X48VuDVv0do",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "4h",
+                    "free": true
+                },
+                {
+                    "title": "Kubernetes Docs",
+                    "url": "https://kubernetes.io/docs/home/",
+                    "type": "docs",
+                    "platform": "Kubernetes",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "cicd",
+            "label": "CI/CD Pipelines",
+            "description": "Jenkins, GitHub Actions, GitLab CI, automated deployments",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "GitHub Actions Tutorial",
+                    "url": "https://www.youtube.com/watch?v=R8_veQiYBjI",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "1h",
+                    "free": true
+                },
+                {
+                    "title": "Jenkins Tutorial",
+                    "url": "https://www.youtube.com/watch?v=6YZvp2GwT0A",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "3h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "cloud",
+            "label": "Cloud Platforms (AWS/GCP/Azure)",
+            "description": "Cloud services, compute, storage, networking",
+            "estimatedTime": "4-6 weeks",
+            "resources": [
+                {
+                    "title": "AWS Certified Cloud Practitioner",
+                    "url": "https://www.youtube.com/watch?v=SOTamWNgDKc",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "4h",
+                    "free": true
+                },
+                {
+                    "title": "AWS Free Tier",
+                    "url": "https://aws.amazon.com/free/",
+                    "type": "docs",
+                    "platform": "AWS",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "iac",
+            "label": "Infrastructure as Code",
+            "description": "Terraform, Ansible, CloudFormation",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "Terraform Full Course",
+                    "url": "https://www.youtube.com/watch?v=SLB_c_ayRMo",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "2.5h",
+                    "free": true
+                },
+                {
+                    "title": "Terraform Documentation",
+                    "url": "https://developer.hashicorp.com/terraform/docs",
+                    "type": "docs",
+                    "platform": "HashiCorp",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "monitoring",
+            "label": "Monitoring & Logging",
+            "description": "Prometheus, Grafana, ELK stack, observability",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "Prometheus Tutorial",
+                    "url": "https://www.youtube.com/watch?v=h4Sl21AKiDg",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "2h",
+                    "free": true
+                }
+            ]
+        }
+    ],
+    "edges": [
+        {
+            "source": "linux",
+            "target": "scripting"
+        },
+        {
+            "source": "linux",
+            "target": "git"
+        },
+        {
+            "source": "scripting",
+            "target": "docker"
+        },
+        {
+            "source": "git",
+            "target": "cicd"
+        },
+        {
+            "source": "docker",
+            "target": "kubernetes"
+        },
+        {
+            "source": "docker",
+            "target": "cicd"
+        },
+        {
+            "source": "cicd",
+            "target": "cloud"
+        },
+        {
+            "source": "kubernetes",
+            "target": "cloud"
+        },
+        {
+            "source": "cloud",
+            "target": "iac"
+        },
+        {
+            "source": "iac",
+            "target": "monitoring"
+        }
+    ]
+}

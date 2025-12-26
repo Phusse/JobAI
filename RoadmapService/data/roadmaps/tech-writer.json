@@ -1,0 +1,151 @@
+{
+    "career_id": "tech-writer",
+    "title": "Technical Writer Roadmap",
+    "description": "Create documentation, guides, and tutorials that make complex technical concepts accessible",
+    "category": "design",
+    "context": "Technical Writers bridge the gap between complex technology and users. You'll create API documentation, user guides, tutorials, and knowledge bases. This role is perfect for those who love both technology and writing. Great tech writers are in high demand as companies realize that good documentation is critical to product success.",
+    "career_type": "Documentation & Content",
+    "nodes": [
+        {
+            "id": "writing-fundamentals",
+            "label": "Writing Fundamentals",
+            "description": "Clear writing, grammar, and technical communication principles",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "Technical Writing Course",
+                    "url": "https://developers.google.com/tech-writing",
+                    "type": "course",
+                    "platform": "Google",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "tech-basics",
+            "label": "Technical Knowledge",
+            "description": "Understand the technology you're documenting (APIs, code, systems)",
+            "estimatedTime": "4-6 weeks",
+            "resources": [
+                {
+                    "title": "Learn Programming Basics",
+                    "url": "https://www.youtube.com/watch?v=zOjov-2OZ0E",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "2h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "markdown",
+            "label": "Markdown & Docs Tools",
+            "description": "Markdown, Git, and documentation platforms (GitBook, Notion, Confluence)",
+            "estimatedTime": "1-2 weeks",
+            "resources": [
+                {
+                    "title": "Markdown Tutorial",
+                    "url": "https://www.youtube.com/watch?v=HUBNt18RFbo",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "30m",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "api-docs",
+            "label": "API Documentation",
+            "description": "OpenAPI/Swagger, REST API docs, and code samples",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "API Documentation Best Practices",
+                    "url": "https://www.youtube.com/watch?v=xE893FVCz3A",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "30m",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "tutorials",
+            "label": "Tutorials & Guides",
+            "description": "Create step-by-step tutorials and how-to guides",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "Writing Tutorials",
+                    "url": "https://www.youtube.com/watch?v=6pAhH7Lms5g",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "20m",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "docs-as-code",
+            "label": "Docs-as-Code",
+            "description": "Version control, CI/CD for docs, and static site generators",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "Docs as Code",
+                    "url": "https://www.youtube.com/watch?v=Tvj7RGfVBmI",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "30m",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "portfolio",
+            "label": "Build a Portfolio",
+            "description": "Create sample docs and contribute to open source documentation",
+            "estimatedTime": "Ongoing",
+            "resources": [
+                {
+                    "title": "Technical Writing Portfolio Tips",
+                    "url": "https://www.youtube.com/watch?v=7xg_0sQn3Qk",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "15m",
+                    "free": true
+                }
+            ]
+        }
+    ],
+    "edges": [
+        {
+            "source": "writing-fundamentals",
+            "target": "tech-basics"
+        },
+        {
+            "source": "tech-basics",
+            "target": "markdown"
+        },
+        {
+            "source": "markdown",
+            "target": "api-docs"
+        },
+        {
+            "source": "markdown",
+            "target": "tutorials"
+        },
+        {
+            "source": "api-docs",
+            "target": "docs-as-code"
+        },
+        {
+            "source": "tutorials",
+            "target": "docs-as-code"
+        },
+        {
+            "source": "docs-as-code",
+            "target": "portfolio"
+        }
+    ]
+}

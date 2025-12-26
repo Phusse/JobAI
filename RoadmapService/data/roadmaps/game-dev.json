@@ -1,0 +1,184 @@
+{
+    "career_id": "game-dev",
+    "title": "Game Developer Roadmap",
+    "description": "Create video games for computers, consoles, and mobile devices",
+    "category": "development",
+    "nodes": [
+        {
+            "id": "programming",
+            "label": "Programming Fundamentals",
+            "description": "Learn C++ or C# for game development",
+            "estimatedTime": "4-6 weeks",
+            "resources": [
+                {
+                    "title": "C++ Tutorial for Beginners",
+                    "url": "https://www.youtube.com/watch?v=vLnPwxZdW4Y",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "4h",
+                    "free": true
+                },
+                {
+                    "title": "C# for Beginners",
+                    "url": "https://www.youtube.com/watch?v=GhQdlIFylQ8",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "4h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "game-engines",
+            "label": "Game Engines",
+            "description": "Learn Unity or Unreal Engine basics",
+            "estimatedTime": "4-6 weeks",
+            "resources": [
+                {
+                    "title": "Unity Beginner Tutorial",
+                    "url": "https://www.youtube.com/watch?v=XtQMytORBmM",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "7h",
+                    "free": true
+                },
+                {
+                    "title": "Unreal Engine 5 Beginner",
+                    "url": "https://www.youtube.com/watch?v=gQmiqmxJMtA",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "5h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "game-math",
+            "label": "Game Mathematics",
+            "description": "Vectors, matrices, physics, and collision detection",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "Math for Game Developers",
+                    "url": "https://www.youtube.com/playlist?list=PLW3Zl3wyJwWOpdhYedlD-yCB7WQoHf-My",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "2d-games",
+            "label": "2D Game Development",
+            "description": "Sprites, animations, and 2D physics",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "2D Game Development in Unity",
+                    "url": "https://www.youtube.com/watch?v=on9nwbZngyw",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "3h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "3d-games",
+            "label": "3D Game Development",
+            "description": "3D modeling, lighting, and camera systems",
+            "estimatedTime": "4-6 weeks",
+            "resources": [
+                {
+                    "title": "3D Game Development",
+                    "url": "https://www.youtube.com/watch?v=pwZpJzpE2lQ",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "4h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "game-design",
+            "label": "Game Design Principles",
+            "description": "Level design, mechanics, and player experience",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "Game Design Course",
+                    "url": "https://www.youtube.com/watch?v=zQvWMdWhFCc",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "2h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "multiplayer",
+            "label": "Multiplayer & Networking",
+            "description": "Online multiplayer, server architecture, and netcode",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "Multiplayer Game Development",
+                    "url": "https://www.youtube.com/watch?v=3yuBOB3Y0sQ",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "2h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "publishing",
+            "label": "Game Publishing",
+            "description": "Steam, consoles, and mobile app stores",
+            "estimatedTime": "1-2 weeks",
+            "resources": [
+                {
+                    "title": "Publishing on Steam",
+                    "url": "https://partner.steamgames.com/doc/store",
+                    "type": "docs",
+                    "platform": "Steam",
+                    "free": true
+                }
+            ]
+        }
+    ],
+    "edges": [
+        {
+            "source": "programming",
+            "target": "game-engines"
+        },
+        {
+            "source": "programming",
+            "target": "game-math"
+        },
+        {
+            "source": "game-engines",
+            "target": "2d-games"
+        },
+        {
+            "source": "game-math",
+            "target": "2d-games"
+        },
+        {
+            "source": "2d-games",
+            "target": "3d-games"
+        },
+        {
+            "source": "3d-games",
+            "target": "game-design"
+        },
+        {
+            "source": "game-design",
+            "target": "multiplayer"
+        },
+        {
+            "source": "multiplayer",
+            "target": "publishing"
+        }
+    ]
+}

@@ -1,0 +1,146 @@
+{
+    "career_id": "project-manager",
+    "title": "Project Manager Roadmap",
+    "description": "Plan, execute, and close projects successfully",
+    "category": "business",
+    "nodes": [
+        {
+            "id": "pm-fundamentals",
+            "label": "Project Management Basics",
+            "description": "Project lifecycle, methodologies, and roles",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "Project Management Fundamentals",
+                    "url": "https://www.youtube.com/watch?v=ZKOL-rZ79gs",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "2h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "agile-scrum",
+            "label": "Agile & Scrum",
+            "description": "Agile principles, Scrum framework, and sprints",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "Agile Scrum Full Course",
+                    "url": "https://www.youtube.com/watch?v=XU0llRltyFM",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "3h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "planning",
+            "label": "Project Planning",
+            "description": "WBS, timelines, Gantt charts, and milestones",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "Project Planning Tutorial",
+                    "url": "https://www.youtube.com/watch?v=HwEp_qRB0TA",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "1h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "risk-management",
+            "label": "Risk Management",
+            "description": "Identify, assess, and mitigate project risks",
+            "estimatedTime": "2 weeks",
+            "resources": [
+                {
+                    "title": "Risk Management",
+                    "url": "https://www.youtube.com/watch?v=3wGxuGd2sTY",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "1h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "tools",
+            "label": "PM Tools",
+            "description": "Jira, Asana, Monday.com, and MS Project",
+            "estimatedTime": "2 weeks",
+            "resources": [
+                {
+                    "title": "Jira for Project Management",
+                    "url": "https://www.youtube.com/watch?v=GWxMTvRGIpc",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "1h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "communication",
+            "label": "Stakeholder Communication",
+            "description": "Reports, presentations, and status updates",
+            "estimatedTime": "2 weeks",
+            "resources": [
+                {
+                    "title": "Stakeholder Communication",
+                    "url": "https://www.youtube.com/watch?v=_u4t5RQDl_A",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "30m",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "certifications",
+            "label": "Certifications",
+            "description": "PMP, CAPM, or PSM certification prep",
+            "estimatedTime": "6-8 weeks",
+            "resources": [
+                {
+                    "title": "PMP Certification Prep",
+                    "url": "https://www.youtube.com/watch?v=GC7pN8Mjot8",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "4h",
+                    "free": true
+                }
+            ]
+        }
+    ],
+    "edges": [
+        {
+            "source": "pm-fundamentals",
+            "target": "agile-scrum"
+        },
+        {
+            "source": "agile-scrum",
+            "target": "planning"
+        },
+        {
+            "source": "planning",
+            "target": "risk-management"
+        },
+        {
+            "source": "risk-management",
+            "target": "tools"
+        },
+        {
+            "source": "tools",
+            "target": "communication"
+        },
+        {
+            "source": "communication",
+            "target": "certifications"
+        }
+    ]
+}

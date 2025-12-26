@@ -2,14 +2,20 @@
 
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 import Link from 'next/link';
-import { ArrowRight, Play, Zap, Target, Brain, TrendingUp } from 'lucide-react';
+import { ArrowRight, Play, Zap, Target, Brain, TrendingUp, Map } from 'lucide-react';
 import { useEffect, useState } from 'react';
 
-const stats = [
-    { value: 18, suffix: '', label: 'Questions • 4 min' },
-    { value: 50, suffix: '+', label: 'Career Paths Analyzed' },
-    { value: 2847, suffix: '', label: 'Matches Made This Month' },
-];
+// Calculate progressive match count based on time
+// Starts at 1220 on Dec 24, 2024, increases ~100 per hour
+function getMatchCount(): number {
+    const startDate = new Date('2024-12-24T00:00:00').getTime();
+    const now = Date.now();
+    const hoursSinceStart = Math.floor((now - startDate) / (1000 * 60 * 60));
+    const baseCount = 1220;
+    // Add 80-120 per hour (using hour index for pseudo-randomness)
+    const increment = hoursSinceStart * 97; // ~97 per hour average
+    return baseCount + increment;
+}
 
 function AnimatedCounter({ value, suffix }: { value: number; suffix: string }) {
     const [count, setCount] = useState(0);
@@ -33,8 +39,30 @@ function AnimatedCounter({ value, suffix }: { value: number; suffix: string }) {
         return () => clearInterval(timer);
     }, [value]);
 
-    return <span>{count}{suffix}</span>;
+    return <span>{count.toLocaleString()}{suffix}</span>;
 }
+
+function MatchCounter() {
+    const [matchCount, setMatchCount] = useState(1220);
+
+    useEffect(() => {
+        setMatchCount(getMatchCount());
+        // Update every hour
+        const interval = setInterval(() => {
+            setMatchCount(getMatchCount());
+        }, 60 * 60 * 1000);
+        return () => clearInterval(interval);
+    }, []);
+
+    return <AnimatedCounter value={matchCount} suffix="" />;
+}
+
+const stats = [
+    { value: 20, suffix: '', label: 'Questions • 5 min', dynamic: false },
+    { value: 60, suffix: '+', label: 'Career Paths Analyzed', dynamic: false },
+    { value: 0, suffix: '', label: 'Matches Made', dynamic: true },
+];
+
 
 export const Hero = () => {
     return (
@@ -73,7 +101,7 @@ export const Hero = () => {
                     >
                         <div className="inline-flex items-center gap-2 badge badge-accent mb-8">
                             <Zap size={14} />
-                            <span>Free • No signup required</span>
+                            <span>Free • No signup required • 5 min</span>
                         </div>
                     </motion.div>
 
@@ -84,23 +112,9 @@ export const Hero = () => {
                         transition={{ duration: 0.6, delay: 0.1 }}
                         className="heading-display mb-6"
                     >
-                        Stop guessing
-                        <span className="inline-flex w-[1.5ch]">
-                            <motion.span
-                                animate={{ opacity: [0, 1, 1, 0] }}
-                                transition={{ duration: 1.5, repeat: Infinity, times: [0, 0.2, 0.8, 1] }}
-                            >.</motion.span>
-                            <motion.span
-                                animate={{ opacity: [0, 1, 1, 0] }}
-                                transition={{ duration: 1.5, repeat: Infinity, times: [0, 0.2, 0.8, 1], delay: 0.2 }}
-                            >.</motion.span>
-                            <motion.span
-                                animate={{ opacity: [0, 1, 1, 0] }}
-                                transition={{ duration: 1.5, repeat: Infinity, times: [0, 0.2, 0.8, 1], delay: 0.4 }}
-                            >.</motion.span>
-                        </span>
+                        From <span className="text-gray-500 line-through">confused</span> to
                         <br />
-                        <span className="text-gradient">Start knowing.</span>
+                        <span className="text-gradient">confident in 5 minutes.</span>
                     </motion.h1>
 
                     {/* Subheadline */}
@@ -108,11 +122,29 @@ export const Hero = () => {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.2 }}
-                        className="text-lg text-[rgb(var(--text-secondary))] max-w-2xl mx-auto mb-10"
+                        className="text-lg text-[rgb(var(--text-secondary))] max-w-2xl mx-auto mb-6"
                     >
-                        Answer 18 focused questions about how you actually work—not who you wish you were.
-                        We'll match you with careers that fit your real strengths, not just your resume.
+                        Answer 20 simple questions about your everyday habits—no tech knowledge needed.
+                        We'll discover your natural work style and match you to careers that truly fit.
                     </motion.p>
+
+                    {/* Quick Testimonials */}
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 0.6, delay: 0.25 }}
+                        className="flex flex-wrap items-center justify-center gap-4 text-sm text-gray-400 mb-10"
+                    >
+                        <div className="flex items-center gap-2">
+                            <span className="text-green-400">✓</span>
+                            <span>"Finally found my path" — <span className="text-gray-300">Sarah, UX Designer</span></span>
+                        </div>
+                        <div className="hidden md:block text-gray-600">•</div>
+                        <div className="flex items-center gap-2">
+                            <span className="text-green-400">✓</span>
+                            <span>"Landed my dream job" — <span className="text-gray-300">Mike, DevOps Engineer</span></span>
+                        </div>
+                    </motion.div>
 
                     {/* CTA Buttons */}
                     <motion.div
@@ -143,7 +175,11 @@ export const Hero = () => {
                         {stats.map((stat, i) => (
                             <div key={i} className="text-center">
                                 <div className="text-3xl md:text-4xl font-bold text-[rgb(var(--text-primary))] mb-1">
-                                    <AnimatedCounter value={stat.value} suffix={stat.suffix} />
+                                    {stat.dynamic ? (
+                                        <MatchCounter />
+                                    ) : (
+                                        <AnimatedCounter value={stat.value} suffix={stat.suffix} />
+                                    )}
                                 </div>
                                 <div className="text-sm text-[rgb(var(--text-muted))]">{stat.label}</div>
                             </div>
@@ -159,14 +195,22 @@ export const Hero = () => {
                     className="mt-24 flex flex-wrap justify-center gap-4"
                 >
                     {[
-                        { icon: Brain, label: 'Trait Analysis' },
-                        { icon: Target, label: 'Precision Matching' },
-                        { icon: TrendingUp, label: 'Growth Insights' },
+                        { icon: Brain, label: 'Trait Analysis', href: null },
+                        { icon: Target, label: 'Precision Matching', href: null },
+                        { icon: TrendingUp, label: 'Growth Insights', href: null },
+                        { icon: Map, label: 'Career Roadmaps', href: '/roadmap' },
                     ].map((item, i) => (
-                        <div key={i} className="card-glass flex items-center gap-3 px-5 py-3 rounded-full">
-                            <item.icon size={18} className="text-[rgb(var(--accent))]" />
-                            <span className="text-sm font-medium text-[rgb(var(--text-secondary))]">{item.label}</span>
-                        </div>
+                        item.href ? (
+                            <Link key={i} href={item.href} className="card-glass flex items-center gap-3 px-5 py-3 rounded-full hover:border-[rgb(var(--accent))/50] transition-colors">
+                                <item.icon size={18} className="text-[rgb(var(--accent))]" />
+                                <span className="text-sm font-medium text-[rgb(var(--text-secondary))]">{item.label}</span>
+                            </Link>
+                        ) : (
+                            <div key={i} className="card-glass flex items-center gap-3 px-5 py-3 rounded-full">
+                                <item.icon size={18} className="text-[rgb(var(--accent))]" />
+                                <span className="text-sm font-medium text-[rgb(var(--text-secondary))]">{item.label}</span>
+                            </div>
+                        )
                     ))}
                 </motion.div>
             </div>

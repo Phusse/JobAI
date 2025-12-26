@@ -1,43 +1,52 @@
+'use client';
+
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { Check } from 'lucide-react';
 import Link from 'next/link';
+import { useEffect } from 'react';
 
 const tiers = [
     {
-        name: 'Starter',
+        name: 'Free',
         price: '$0',
-        features: ['Basic Personality Profile', '3 Job Matches / Month', 'Standard Support'],
-        cta: 'Get Started',
+        features: ['20-Question Assessment', 'Top 3 Career Matches', 'Trait Profile Overview', 'Skills Gap Insights'],
+        cta: 'Start Free',
         primary: false
     },
     {
         name: 'Pro',
         price: '$29',
-        period: '/mo',
-        features: ['Deep Psychological Analysis', 'Unlimited Job Matches', 'CV Optimization Tips', 'Priority Support', 'Growth Trajectory Report'],
-        cta: 'Go Pro',
-        primary: true
+        period: ' one-time',
+        features: ['Full 40-Question Deep Dive', 'Detailed PDF Report', 'Complete Learning Roadmap', 'Alternative Career Paths', 'Priority Support'],
+        cta: 'Coming Soon',
+        primary: true,
+        disabled: true
     },
     {
         name: 'Enterprise',
         price: 'Custom',
-        features: ['API Access', 'Team Analytics', 'White-label Reports', 'Dedicated Account Manager'],
+        features: ['White-label Solution', 'Team Analytics Dashboard', 'API Access', 'Dedicated Account Manager'],
         cta: 'Contact Sales',
-        primary: false
+        primary: false,
+        disabled: true
     }
 ];
 
 export default function PricingPage() {
+    useEffect(() => {
+        document.title = 'Pricing | JobMatch';
+    }, []);
+
     return (
-        <div className="min-h-screen bg-slate-950 text-slate-50 flex flex-col">
+        <div className="min-h-screen bg-[rgb(var(--bg-base))] text-[rgb(var(--text-primary))] flex flex-col">
             <Header />
 
             <main className="flex-grow pt-32 pb-24 px-6 container mx-auto">
                 <div className="text-center max-w-3xl mx-auto mb-20">
-                    <h1 className="text-4xl md:text-5xl font-extrabold mb-6">Simple, Transparent Pricing</h1>
-                    <p className="text-xl text-slate-400">
-                        Invest in your career with plans designed for every stage of your professional journey.
+                    <h1 className="text-4xl md:text-5xl font-extrabold mb-6 text-gradient">Simple, Transparent Pricing</h1>
+                    <p className="text-xl text-[rgb(var(--text-muted))]">
+                        Start with our free assessment. Upgrade when you're ready for deeper insights.
                     </p>
                 </div>
 
@@ -46,36 +55,37 @@ export default function PricingPage() {
                         <div
                             key={i}
                             className={`rounded-3xl p-8 border flex flex-col ${tier.primary
-                                    ? 'bg-slate-900 border-blue-500 shadow-2xl shadow-blue-900/20 relative overflow-hidden'
-                                    : 'bg-slate-950 border-slate-800'
+                                ? 'bg-[rgb(var(--bg-elevated))] border-[rgb(var(--accent))] shadow-2xl shadow-[rgb(var(--accent))]/10 relative overflow-hidden'
+                                : 'bg-[rgb(var(--bg-surface))] border-[rgb(var(--border-default))]'
                                 }`}
                         >
                             {tier.primary && (
-                                <div className="absolute top-0 right-0 bg-blue-600 text-xs font-bold px-3 py-1 rounded-bl-xl text-white">
-                                    POPULAR
+                                <div className="absolute top-0 right-0 bg-[rgb(var(--accent))] text-xs font-bold px-3 py-1 rounded-bl-xl text-white">
+                                    COMING SOON
                                 </div>
                             )}
                             <h3 className="text-2xl font-bold mb-2">{tier.name}</h3>
                             <div className="flex items-baseline gap-1 mb-8">
                                 <span className="text-4xl font-extrabold">{tier.price}</span>
-                                {tier.period && <span className="text-slate-500">{tier.period}</span>}
+                                {tier.period && <span className="text-[rgb(var(--text-muted))]">{tier.period}</span>}
                             </div>
 
                             <ul className="space-y-4 mb-8 flex-grow">
                                 {tier.features.map((feat, idx) => (
-                                    <li key={idx} className="flex items-center gap-3 text-slate-300">
-                                        <Check className="w-5 h-5 text-blue-500 flex-shrink-0" />
+                                    <li key={idx} className="flex items-center gap-3 text-[rgb(var(--text-secondary))]">
+                                        <Check className="w-5 h-5 text-[rgb(var(--accent))] flex-shrink-0" />
                                         <span>{feat}</span>
                                     </li>
                                 ))}
                             </ul>
 
                             <Link
-                                href="/questionnaire"
+                                href={tier.disabled ? '#' : '/questionnaire'}
                                 className={`w-full py-4 rounded-xl font-bold text-center transition-all ${tier.primary
-                                        ? 'bg-blue-600 hover:bg-blue-500 text-white shadow-lg shadow-blue-600/25'
-                                        : 'bg-slate-800 hover:bg-slate-700 text-white'
-                                    }`}
+                                    ? 'bg-[rgb(var(--accent))] hover:opacity-90 text-white shadow-lg'
+                                    : 'bg-[rgb(var(--bg-elevated))] hover:bg-[rgb(var(--glass-hover))] text-[rgb(var(--text-primary))] border border-[rgb(var(--border-default))]'
+                                    } ${tier.disabled ? 'opacity-60 cursor-not-allowed' : ''}`}
+                                onClick={tier.disabled ? (e) => e.preventDefault() : undefined}
                             >
                                 {tier.cta}
                             </Link>
@@ -88,3 +98,4 @@ export default function PricingPage() {
         </div>
     );
 }
+

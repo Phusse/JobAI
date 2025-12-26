@@ -1,0 +1,155 @@
+{
+    "career_id": "scrum-master",
+    "title": "Scrum Master Roadmap",
+    "description": "Facilitate agile processes, remove blockers, and coach development teams",
+    "category": "business",
+    "context": "Scrum Masters are servant leaders who help teams adopt and improve agile practices. You'll facilitate ceremonies (standups, retrospectives, planning), remove impediments, and protect the team from distractions. This role requires strong interpersonal skills and a deep understanding of agile principles. It's ideal for those who enjoy coaching and enabling others to do their best work.",
+    "career_type": "Agile Leadership",
+    "nodes": [
+        {
+            "id": "agile-fundamentals",
+            "label": "Agile Fundamentals",
+            "description": "Agile manifesto, principles, and different methodologies",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "Agile Fundamentals",
+                    "url": "https://www.youtube.com/watch?v=Z9QbYZh1YXY",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "2h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "scrum-framework",
+            "label": "Scrum Framework",
+            "description": "Scrum roles, events, artifacts, and rules",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "Scrum Guide Explained",
+                    "url": "https://www.youtube.com/watch?v=XU0llRltyFM",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "3h",
+                    "free": true
+                },
+                {
+                    "title": "Official Scrum Guide",
+                    "url": "https://scrumguides.org/",
+                    "type": "docs",
+                    "platform": "Scrum.org",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "facilitation",
+            "label": "Facilitation Skills",
+            "description": "Run effective meetings, retrospectives, and workshops",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "Facilitation Techniques",
+                    "url": "https://www.youtube.com/watch?v=6_Xf2_1DjKs",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "30m",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "coaching",
+            "label": "Coaching & Mentoring",
+            "description": "Coach teams and individuals on agile practices",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "Coaching for Scrum Masters",
+                    "url": "https://www.youtube.com/watch?v=oMPd7k_rAPs",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "30m",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "conflict-resolution",
+            "label": "Conflict Resolution",
+            "description": "Handle team conflicts and difficult conversations",
+            "estimatedTime": "1-2 weeks",
+            "resources": [
+                {
+                    "title": "Conflict Resolution",
+                    "url": "https://www.youtube.com/watch?v=KY5TWVz5ZDU",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "20m",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "metrics",
+            "label": "Agile Metrics",
+            "description": "Velocity, burndown charts, and team health metrics",
+            "estimatedTime": "1-2 weeks",
+            "resources": [
+                {
+                    "title": "Agile Metrics",
+                    "url": "https://www.youtube.com/watch?v=FF7XlcXe374",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "30m",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "certification",
+            "label": "Scrum Certification",
+            "description": "CSM, PSM I, or A-CSM certification",
+            "estimatedTime": "2-4 weeks",
+            "resources": [
+                {
+                    "title": "PSM I Prep",
+                    "url": "https://www.youtube.com/watch?v=h0aE0xr-aEE",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "1h",
+                    "free": true
+                }
+            ]
+        }
+    ],
+    "edges": [
+        {
+            "source": "agile-fundamentals",
+            "target": "scrum-framework"
+        },
+        {
+            "source": "scrum-framework",
+            "target": "facilitation"
+        },
+        {
+            "source": "facilitation",
+            "target": "coaching"
+        },
+        {
+            "source": "coaching",
+            "target": "conflict-resolution"
+        },
+        {
+            "source": "conflict-resolution",
+            "target": "metrics"
+        },
+        {
+            "source": "metrics",
+            "target": "certification"
+        }
+    ]
+}

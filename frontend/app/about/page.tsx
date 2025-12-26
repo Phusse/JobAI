@@ -57,14 +57,14 @@ export default function AboutPage() {
                                 <h2 className="heading-3 text-[rgb(var(--text-primary))]">How It Works</h2>
                             </div>
                             <p>
-                                Our 35-question assessment is designed to uncover your true work preferences
+                                Our 20-question assessment is designed to uncover your true work preferences
                                 through indirect questions about everyday behavior. We're not asking if you
                                 know Python—we're finding out if you're the type of person who would enjoy
                                 learning it.
                             </p>
                             <p className="mt-4">
-                                Our AI analyzes your responses against 25+ career profiles, identifying
-                                which paths align with your natural strengths and which might be a struggle.
+                                Our AI analyzes your responses against 60+ career profiles across 15 categories,
+                                identifying which paths align with your natural strengths and which might be a struggle.
                             </p>
                         </section>
 

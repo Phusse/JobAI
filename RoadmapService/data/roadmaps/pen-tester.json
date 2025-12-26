@@ -1,0 +1,159 @@
+{
+    "career_id": "pen-tester",
+    "title": "Penetration Tester Roadmap",
+    "description": "Ethically hack systems to find vulnerabilities before malicious actors do",
+    "category": "security",
+    "context": "Penetration Testers (Ethical Hackers) are hired to break into systems, networks, and applications to identify security weaknesses. You'll think like an attacker, use hacking tools, and write detailed reports on vulnerabilities. This role requires creativity, persistence, and a deep understanding of how systems can be exploited. Many pen testers hold certifications like OSCP or CEH.",
+    "career_type": "Offensive Security",
+    "nodes": [
+        {
+            "id": "networking",
+            "label": "Networking & Protocols",
+            "description": "TCP/IP, HTTP, DNS, firewalls, and how data flows across networks",
+            "estimatedTime": "4-6 weeks",
+            "resources": [
+                {
+                    "title": "Networking Fundamentals",
+                    "url": "https://www.youtube.com/watch?v=qiQR5rTSshw",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "4h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "linux",
+            "label": "Linux & Scripting",
+            "description": "Kali Linux, bash scripting, and command-line tools",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "Kali Linux Tutorial",
+                    "url": "https://www.youtube.com/watch?v=lZAoFs75_cs",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "4h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "web-hacking",
+            "label": "Web Application Hacking",
+            "description": "OWASP Top 10, SQL injection, XSS, CSRF, and Burp Suite",
+            "estimatedTime": "4-6 weeks",
+            "resources": [
+                {
+                    "title": "Web Hacking Full Course",
+                    "url": "https://www.youtube.com/watch?v=X4eRbHgRawI",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "3h",
+                    "free": true
+                },
+                {
+                    "title": "PortSwigger Web Academy",
+                    "url": "https://portswigger.net/web-security",
+                    "type": "course",
+                    "platform": "PortSwigger",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "network-hacking",
+            "label": "Network Penetration Testing",
+            "description": "Scanning, enumeration, exploitation, and pivoting",
+            "estimatedTime": "4-6 weeks",
+            "resources": [
+                {
+                    "title": "Network Pentesting",
+                    "url": "https://www.youtube.com/watch?v=3Kq1MIfTWCE",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "4h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "tools",
+            "label": "Hacking Tools",
+            "description": "Nmap, Metasploit, Burp Suite, Wireshark, and custom scripts",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "Metasploit Tutorial",
+                    "url": "https://www.youtube.com/watch?v=8lR27r8Y_ik",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "2h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "reporting",
+            "label": "Vulnerability Reporting",
+            "description": "Write professional pentest reports and communicate findings",
+            "estimatedTime": "2 weeks",
+            "resources": [
+                {
+                    "title": "Pentest Report Writing",
+                    "url": "https://www.youtube.com/watch?v=EOoBAq6z4Zk",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "30m",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "certifications",
+            "label": "Certifications (OSCP/CEH)",
+            "description": "Industry-recognized certifications to validate your skills",
+            "estimatedTime": "3-6 months",
+            "resources": [
+                {
+                    "title": "OSCP Prep Guide",
+                    "url": "https://www.youtube.com/watch?v=8KK_qRYlOQI",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "1h",
+                    "free": true
+                }
+            ]
+        }
+    ],
+    "edges": [
+        {
+            "source": "networking",
+            "target": "linux"
+        },
+        {
+            "source": "linux",
+            "target": "web-hacking"
+        },
+        {
+            "source": "linux",
+            "target": "network-hacking"
+        },
+        {
+            "source": "web-hacking",
+            "target": "tools"
+        },
+        {
+            "source": "network-hacking",
+            "target": "tools"
+        },
+        {
+            "source": "tools",
+            "target": "reporting"
+        },
+        {
+            "source": "reporting",
+            "target": "certifications"
+        }
+    ]
+}

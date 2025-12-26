@@ -1,0 +1,175 @@
+{
+    "career_id": "ux-designer",
+    "title": "UX/UI Designer Roadmap",
+    "description": "Design intuitive and beautiful user experiences",
+    "category": "design",
+    "icon": null,
+    "nodes": [
+        {
+            "id": "design-fundamentals",
+            "label": "Design Fundamentals",
+            "description": "Color theory, typography, layout, and visual hierarchy",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "Design Fundamentals",
+                    "url": "https://www.youtube.com/watch?v=YqQx75OPRa0",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "1h",
+                    "free": true
+                },
+                {
+                    "title": "Google UX Design",
+                    "url": "https://grow.google/certificates/ux-design/",
+                    "type": "course",
+                    "platform": "Google",
+                    "free": false
+                }
+            ]
+        },
+        {
+            "id": "user-research",
+            "label": "User Research",
+            "description": "User interviews, surveys, personas, and empathy mapping",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "UX Research Methods",
+                    "url": "https://www.youtube.com/watch?v=oFjdRn0xAcc",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "30m",
+                    "free": true
+                },
+                {
+                    "title": "Nielsen Norman Group",
+                    "url": "https://www.nngroup.com/articles/",
+                    "type": "article",
+                    "platform": "NN/g",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "wireframing",
+            "label": "Wireframing & Prototyping",
+            "description": "Low-fidelity wireframes, user flows, and interaction design",
+            "estimatedTime": "2 weeks",
+            "resources": [
+                {
+                    "title": "Wireframing Tutorial",
+                    "url": "https://www.youtube.com/watch?v=qpH7-KFWZRI",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "40m",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "figma",
+            "label": "Figma Mastery",
+            "description": "Figma tools, components, auto-layout, and design systems",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "Figma Full Course",
+                    "url": "https://www.youtube.com/watch?v=1pW_sk-2y40",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "3h",
+                    "free": true
+                },
+                {
+                    "title": "Figma Learn",
+                    "url": "https://help.figma.com/hc/en-us",
+                    "type": "docs",
+                    "platform": "Figma",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "design-systems",
+            "label": "Design Systems",
+            "description": "Component libraries, tokens, and scalable design",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "Design Systems Guide",
+                    "url": "https://www.designsystems.com/",
+                    "type": "article",
+                    "platform": "Design Systems",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "usability-testing",
+            "label": "Usability Testing",
+            "description": "Testing methods, A/B tests, and iterative improvement",
+            "estimatedTime": "2 weeks",
+            "resources": [
+                {
+                    "title": "Usability Testing",
+                    "url": "https://www.youtube.com/watch?v=0YL0xoSmyZI",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "20m",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "portfolio",
+            "label": "Building Your Portfolio",
+            "description": "Case studies, presentation, and personal branding",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "UX Portfolio Tips",
+                    "url": "https://www.youtube.com/watch?v=0YL0xoSmyZI",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "30m",
+                    "free": true
+                }
+            ]
+        }
+    ],
+    "edges": [
+        {
+            "source": "design-fundamentals",
+            "target": "user-research"
+        },
+        {
+            "source": "design-fundamentals",
+            "target": "wireframing"
+        },
+        {
+            "source": "user-research",
+            "target": "wireframing"
+        },
+        {
+            "source": "wireframing",
+            "target": "figma"
+        },
+        {
+            "source": "figma",
+            "target": "design-systems"
+        },
+        {
+            "source": "figma",
+            "target": "usability-testing"
+        },
+        {
+            "source": "design-systems",
+            "target": "portfolio"
+        },
+        {
+            "source": "usability-testing",
+            "target": "portfolio"
+        }
+    ]
+}

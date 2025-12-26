@@ -1,0 +1,159 @@
+{
+    "career_id": "blockchain-dev",
+    "title": "Blockchain Developer Roadmap",
+    "description": "Build decentralized applications and smart contracts on blockchain platforms",
+    "category": "emerging",
+    "context": "Blockchain Developers create decentralized applications (dApps), smart contracts, and work with cryptocurrencies. You'll build on platforms like Ethereum, Solana, or Polygon, working with technologies like Web3, DeFi, and NFTs. This field is volatile but offers high compensation and the chance to work on revolutionary financial and social systems.",
+    "career_type": "Emerging Technology",
+    "nodes": [
+        {
+            "id": "web-basics",
+            "label": "Web Development Basics",
+            "description": "HTML, CSS, JavaScript, and React fundamentals",
+            "estimatedTime": "4-6 weeks",
+            "resources": [
+                {
+                    "title": "Web Dev Full Course",
+                    "url": "https://www.youtube.com/watch?v=G3e-cpL7ofc",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "6h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "blockchain-fundamentals",
+            "label": "Blockchain Fundamentals",
+            "description": "How blockchains work: consensus, cryptography, distributed ledgers",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "Blockchain Explained",
+                    "url": "https://www.youtube.com/watch?v=SSo_EIwHSd4",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "2h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "solidity",
+            "label": "Solidity Programming",
+            "description": "Write smart contracts for Ethereum and EVM-compatible chains",
+            "estimatedTime": "4-6 weeks",
+            "resources": [
+                {
+                    "title": "Solidity Full Course",
+                    "url": "https://www.youtube.com/watch?v=M576WGiDBdQ",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "16h",
+                    "free": true
+                },
+                {
+                    "title": "CryptoZombies",
+                    "url": "https://cryptozombies.io/",
+                    "type": "course",
+                    "platform": "CryptoZombies",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "web3",
+            "label": "Web3 & Ethers.js",
+            "description": "Connect frontend apps to blockchain using Web3 libraries",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "Web3.js Tutorial",
+                    "url": "https://www.youtube.com/watch?v=t3wM5903ty0",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "2h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "defi",
+            "label": "DeFi Protocols",
+            "description": "Understand lending, AMMs, yield farming, and token economics",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "DeFi Explained",
+                    "url": "https://www.youtube.com/watch?v=17QRFlml4pA",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "1h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "security",
+            "label": "Smart Contract Security",
+            "description": "Common vulnerabilities, auditing, and secure coding practices",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "Smart Contract Security",
+                    "url": "https://www.youtube.com/watch?v=DRZogmD647U",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "2h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "layer2",
+            "label": "Layer 2 & Scaling",
+            "description": "Polygon, Optimism, Arbitrum, and scaling solutions",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "Layer 2 Explained",
+                    "url": "https://www.youtube.com/watch?v=BgCgauWVTs0",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "30m",
+                    "free": true
+                }
+            ]
+        }
+    ],
+    "edges": [
+        {
+            "source": "web-basics",
+            "target": "blockchain-fundamentals"
+        },
+        {
+            "source": "blockchain-fundamentals",
+            "target": "solidity"
+        },
+        {
+            "source": "solidity",
+            "target": "web3"
+        },
+        {
+            "source": "web3",
+            "target": "defi"
+        },
+        {
+            "source": "solidity",
+            "target": "security"
+        },
+        {
+            "source": "defi",
+            "target": "layer2"
+        },
+        {
+            "source": "security",
+            "target": "layer2"
+        }
+    ]
+}

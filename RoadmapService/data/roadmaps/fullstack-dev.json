@@ -1,0 +1,171 @@
+{
+    "career_id": "fullstack-dev",
+    "title": "Full Stack Developer Roadmap",
+    "description": "Master both frontend and backend development",
+    "category": "development",
+    "icon": null,
+    "nodes": [
+        {
+            "id": "html-css",
+            "label": "HTML & CSS",
+            "description": "Web fundamentals, responsive design, and modern CSS",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "HTML & CSS Full Course",
+                    "url": "https://www.youtube.com/watch?v=G3e-cpL7ofc",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "6h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "javascript",
+            "label": "JavaScript",
+            "description": "Core JavaScript, DOM, async programming",
+            "estimatedTime": "4-5 weeks",
+            "resources": [
+                {
+                    "title": "JavaScript Full Course",
+                    "url": "https://www.youtube.com/watch?v=PkZNo7MFNFg",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "3.5h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "react",
+            "label": "React",
+            "description": "Components, hooks, state management",
+            "estimatedTime": "4-6 weeks",
+            "resources": [
+                {
+                    "title": "React Full Course",
+                    "url": "https://www.youtube.com/watch?v=CgkZ7MvWUAA",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "5h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "nodejs",
+            "label": "Node.js & Express",
+            "description": "Server-side JavaScript, REST APIs",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "Node.js Full Course",
+                    "url": "https://www.youtube.com/watch?v=Oe421EPjeBE",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "8h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "databases",
+            "label": "Databases",
+            "description": "SQL, PostgreSQL, MongoDB",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "SQL Full Course",
+                    "url": "https://www.youtube.com/watch?v=HXV3zeQKqGY",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "4h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "auth",
+            "label": "Authentication",
+            "description": "JWT, OAuth, session management",
+            "estimatedTime": "2 weeks",
+            "resources": [
+                {
+                    "title": "JWT Tutorial",
+                    "url": "https://www.youtube.com/watch?v=7Q17ubqLfaM",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "1h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "nextjs",
+            "label": "Next.js",
+            "description": "Full-stack React framework",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "Next.js Full Course",
+                    "url": "https://www.youtube.com/watch?v=ZVnjOPwW4ZA",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "4h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "deployment",
+            "label": "Deployment",
+            "description": "Vercel, Docker, CI/CD",
+            "estimatedTime": "2 weeks",
+            "resources": [
+                {
+                    "title": "Docker Full Course",
+                    "url": "https://www.youtube.com/watch?v=fqMOX6JJhGo",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "2h",
+                    "free": true
+                }
+            ]
+        }
+    ],
+    "edges": [
+        {
+            "source": "html-css",
+            "target": "javascript"
+        },
+        {
+            "source": "javascript",
+            "target": "react"
+        },
+        {
+            "source": "javascript",
+            "target": "nodejs"
+        },
+        {
+            "source": "nodejs",
+            "target": "databases"
+        },
+        {
+            "source": "databases",
+            "target": "auth"
+        },
+        {
+            "source": "react",
+            "target": "nextjs"
+        },
+        {
+            "source": "auth",
+            "target": "nextjs"
+        },
+        {
+            "source": "nextjs",
+            "target": "deployment"
+        }
+    ]
+}

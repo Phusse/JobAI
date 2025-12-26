@@ -1,0 +1,152 @@
+{
+    "career_id": "digital-marketer",
+    "title": "Digital Marketer Roadmap",
+    "description": "Create and manage online marketing campaigns to drive traffic, leads, and conversions",
+    "category": "business",
+    "context": "Digital Marketers drive business growth through online channels. You'll create campaigns across social media, search engines, email, and content platforms. This role combines creativity with data analysis, as you'll need to measure results and optimize for performance. It's perfect for those who enjoy both creative work and working with numbers.",
+    "career_type": "Marketing & Growth",
+    "nodes": [
+        {
+            "id": "marketing-fundamentals",
+            "label": "Marketing Fundamentals",
+            "description": "Marketing principles, customer journey, and digital channels",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "Digital Marketing Full Course",
+                    "url": "https://www.youtube.com/watch?v=nU-IIXBWlS4",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "4h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "seo",
+            "label": "SEO (Search Engine Optimization)",
+            "description": "Keyword research, on-page SEO, technical SEO, and link building",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "SEO Full Course",
+                    "url": "https://www.youtube.com/watch?v=xsVTqzratPs",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "3h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "sem",
+            "label": "SEM & Paid Ads",
+            "description": "Google Ads, Facebook Ads, and paid acquisition strategies",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "Google Ads Tutorial",
+                    "url": "https://www.youtube.com/watch?v=mczF_dkAi_I",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "2h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "social-media",
+            "label": "Social Media Marketing",
+            "description": "Platform strategies, content creation, and community building",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "Social Media Marketing",
+                    "url": "https://www.youtube.com/watch?v=YqXTvwEOJYI",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "2h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "content-marketing",
+            "label": "Content Marketing",
+            "description": "Blog posts, videos, podcasts, and content strategy",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "Content Marketing Strategy",
+                    "url": "https://www.youtube.com/watch?v=PaQR--uoRGE",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "1h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "email-marketing",
+            "label": "Email Marketing",
+            "description": "Email campaigns, automation, and list building",
+            "estimatedTime": "2 weeks",
+            "resources": [
+                {
+                    "title": "Email Marketing Tutorial",
+                    "url": "https://www.youtube.com/watch?v=XRvn0C2YwGc",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "1h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "analytics",
+            "label": "Analytics & Measurement",
+            "description": "Google Analytics, conversion tracking, and ROI measurement",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "Google Analytics Tutorial",
+                    "url": "https://www.youtube.com/watch?v=uXv3JoGMvNY",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "2h",
+                    "free": true
+                }
+            ]
+        }
+    ],
+    "edges": [
+        {
+            "source": "marketing-fundamentals",
+            "target": "seo"
+        },
+        {
+            "source": "marketing-fundamentals",
+            "target": "sem"
+        },
+        {
+            "source": "seo",
+            "target": "content-marketing"
+        },
+        {
+            "source": "sem",
+            "target": "social-media"
+        },
+        {
+            "source": "social-media",
+            "target": "email-marketing"
+        },
+        {
+            "source": "content-marketing",
+            "target": "email-marketing"
+        },
+        {
+            "source": "email-marketing",
+            "target": "analytics"
+        }
+    ]
+}

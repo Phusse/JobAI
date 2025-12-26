@@ -1,0 +1,152 @@
+{
+    "career_id": "ar-vr-dev",
+    "title": "AR/VR Developer Roadmap",
+    "description": "Create immersive augmented and virtual reality experiences",
+    "category": "emerging",
+    "context": "AR/VR Developers build immersive experiences that blend digital content with the real world (AR) or create entirely virtual environments (VR). You'll work with game engines, 3D graphics, and spatial computing platforms like Meta Quest, Apple Vision Pro, or HoloLens. This exciting field combines gaming technology with new interaction paradigms.",
+    "career_type": "Immersive Technology",
+    "nodes": [
+        {
+            "id": "programming",
+            "label": "Programming Fundamentals",
+            "description": "C# for Unity or C++ for Unreal Engine",
+            "estimatedTime": "4-6 weeks",
+            "resources": [
+                {
+                    "title": "C# for Beginners",
+                    "url": "https://www.youtube.com/watch?v=GhQdlIFylQ8",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "4h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "3d-basics",
+            "label": "3D Graphics Basics",
+            "description": "3D math, transformations, and rendering concepts",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "3D Math for Game Dev",
+                    "url": "https://www.youtube.com/watch?v=d4EgbgTm0Bg",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "2h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "unity",
+            "label": "Unity Engine",
+            "description": "Unity fundamentals, scenes, prefabs, and scripting",
+            "estimatedTime": "4-6 weeks",
+            "resources": [
+                {
+                    "title": "Unity Beginner Tutorial",
+                    "url": "https://www.youtube.com/watch?v=XtQMytORBmM",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "7h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "xr-development",
+            "label": "XR Development",
+            "description": "Unity XR Toolkit, hand tracking, and spatial interactions",
+            "estimatedTime": "4-6 weeks",
+            "resources": [
+                {
+                    "title": "Unity VR Development",
+                    "url": "https://www.youtube.com/watch?v=gGYtahQjmWQ",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "3h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "ar-development",
+            "label": "AR Development",
+            "description": "ARCore, ARKit, and mobile AR experiences",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "AR Foundation Tutorial",
+                    "url": "https://www.youtube.com/watch?v=FWyTf3USDCU",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "2h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "3d-modeling",
+            "label": "3D Asset Creation",
+            "description": "Blender basics for creating 3D models and animations",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "Blender Beginner Tutorial",
+                    "url": "https://www.youtube.com/watch?v=nIoXOplUvAw",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "4h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "optimization",
+            "label": "Performance Optimization",
+            "description": "Optimize for mobile VR, reduce latency, and maintain framerates",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "VR Performance Tips",
+                    "url": "https://www.youtube.com/watch?v=w4q5Z7Q0MsY",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "30m",
+                    "free": true
+                }
+            ]
+        }
+    ],
+    "edges": [
+        {
+            "source": "programming",
+            "target": "3d-basics"
+        },
+        {
+            "source": "3d-basics",
+            "target": "unity"
+        },
+        {
+            "source": "unity",
+            "target": "xr-development"
+        },
+        {
+            "source": "unity",
+            "target": "ar-development"
+        },
+        {
+            "source": "xr-development",
+            "target": "3d-modeling"
+        },
+        {
+            "source": "ar-development",
+            "target": "3d-modeling"
+        },
+        {
+            "source": "3d-modeling",
+            "target": "optimization"
+        }
+    ]
+}

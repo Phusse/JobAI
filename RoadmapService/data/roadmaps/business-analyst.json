@@ -1,0 +1,148 @@
+{
+    "career_id": "business-analyst",
+    "title": "Business Analyst Roadmap",
+    "description": "Bridge business needs and technical solutions through requirements gathering and analysis",
+    "category": "business",
+    "context": "Business Analysts translate business needs into requirements that developers can build. You'll work with stakeholders to understand problems, document requirements, create process flows, and ensure solutions meet business objectives. This role is perfect for analytical thinkers who enjoy solving problems and communicating across different teams.",
+    "career_type": "Business & Technology",
+    "nodes": [
+        {
+            "id": "ba-fundamentals",
+            "label": "BA Fundamentals",
+            "description": "Business analysis concepts, BABOK, and the BA role",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "Business Analysis Fundamentals",
+                    "url": "https://www.youtube.com/watch?v=SqKAKPJy-bI",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "2h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "requirements",
+            "label": "Requirements Gathering",
+            "description": "Elicitation techniques, interviews, workshops, and user stories",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "Requirements Elicitation",
+                    "url": "https://www.youtube.com/watch?v=V-UvSKe8Bck",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "1h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "documentation",
+            "label": "Documentation",
+            "description": "BRDs, FRDs, use cases, and acceptance criteria",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "BA Documentation",
+                    "url": "https://www.youtube.com/watch?v=fi44fJY0B2E",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "30m",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "process-modeling",
+            "label": "Process Modeling",
+            "description": "BPMN, flowcharts, and process improvement",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "BPMN Tutorial",
+                    "url": "https://www.youtube.com/watch?v=BwkNceoybvA",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "1h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "data-analysis",
+            "label": "Data Analysis",
+            "description": "SQL, Excel, and data-driven decision making",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "SQL for Business Analysts",
+                    "url": "https://www.youtube.com/watch?v=HXV3zeQKqGY",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "4h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "stakeholder-management",
+            "label": "Stakeholder Management",
+            "description": "Communication, presentations, and managing expectations",
+            "estimatedTime": "2 weeks",
+            "resources": [
+                {
+                    "title": "Stakeholder Management",
+                    "url": "https://www.youtube.com/watch?v=_u4t5RQDl_A",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "30m",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "agile-ba",
+            "label": "Agile BA Practices",
+            "description": "Working in agile teams, user stories, and backlog management",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "Agile Business Analysis",
+                    "url": "https://www.youtube.com/watch?v=HBo6dBQ-6tA",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "30m",
+                    "free": true
+                }
+            ]
+        }
+    ],
+    "edges": [
+        {
+            "source": "ba-fundamentals",
+            "target": "requirements"
+        },
+        {
+            "source": "requirements",
+            "target": "documentation"
+        },
+        {
+            "source": "documentation",
+            "target": "process-modeling"
+        },
+        {
+            "source": "process-modeling",
+            "target": "data-analysis"
+        },
+        {
+            "source": "data-analysis",
+            "target": "stakeholder-management"
+        },
+        {
+            "source": "stakeholder-management",
+            "target": "agile-ba"
+        }
+    ]
+}

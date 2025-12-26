@@ -1,0 +1,183 @@
+{
+    "career_id": "mobile-dev",
+    "title": "Mobile App Developer Roadmap",
+    "description": "Build native and cross-platform mobile applications",
+    "category": "development",
+    "nodes": [
+        {
+            "id": "programming-basics",
+            "label": "Programming Fundamentals",
+            "description": "Learn a core programming language (JavaScript, Kotlin, or Swift)",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "JavaScript Full Course",
+                    "url": "https://www.youtube.com/watch?v=PkZNo7MFNFg",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "3.5h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "mobile-fundamentals",
+            "label": "Mobile Development Basics",
+            "description": "Understand mobile app architecture, lifecycle, and UI patterns",
+            "estimatedTime": "2 weeks",
+            "resources": [
+                {
+                    "title": "Mobile Development Overview",
+                    "url": "https://developer.android.com/guide",
+                    "type": "docs",
+                    "platform": "Android",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "react-native",
+            "label": "React Native",
+            "description": "Build cross-platform apps with React Native",
+            "estimatedTime": "4-6 weeks",
+            "resources": [
+                {
+                    "title": "React Native Tutorial",
+                    "url": "https://www.youtube.com/watch?v=VozPNrt-LfE",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "5h",
+                    "free": true
+                },
+                {
+                    "title": "React Native Docs",
+                    "url": "https://reactnative.dev/docs/getting-started",
+                    "type": "docs",
+                    "platform": "React Native",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "flutter",
+            "label": "Flutter (Alternative)",
+            "description": "Build beautiful cross-platform apps with Flutter and Dart",
+            "estimatedTime": "4-6 weeks",
+            "resources": [
+                {
+                    "title": "Flutter Full Course",
+                    "url": "https://www.youtube.com/watch?v=VPvVD8t02U8",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "5h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "native-ios",
+            "label": "Native iOS (Swift)",
+            "description": "Build native iOS apps with Swift and SwiftUI",
+            "estimatedTime": "4-6 weeks",
+            "resources": [
+                {
+                    "title": "Swift Programming Tutorial",
+                    "url": "https://www.youtube.com/watch?v=comQ1-x2a1Q",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "6h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "native-android",
+            "label": "Native Android (Kotlin)",
+            "description": "Build native Android apps with Kotlin and Jetpack Compose",
+            "estimatedTime": "4-6 weeks",
+            "resources": [
+                {
+                    "title": "Kotlin for Android",
+                    "url": "https://www.youtube.com/watch?v=F9UC9DY-vIU",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "4h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "mobile-apis",
+            "label": "APIs & Backend Integration",
+            "description": "Connect mobile apps to REST APIs and handle authentication",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "REST API in Mobile Apps",
+                    "url": "https://www.youtube.com/watch?v=fgTGADljAeg",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "1h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "app-store",
+            "label": "App Store Publishing",
+            "description": "Deploy apps to Google Play Store and Apple App Store",
+            "estimatedTime": "1-2 weeks",
+            "resources": [
+                {
+                    "title": "Publishing Android App",
+                    "url": "https://developer.android.com/studio/publish",
+                    "type": "docs",
+                    "platform": "Android",
+                    "free": true
+                }
+            ]
+        }
+    ],
+    "edges": [
+        {
+            "source": "programming-basics",
+            "target": "mobile-fundamentals"
+        },
+        {
+            "source": "mobile-fundamentals",
+            "target": "react-native"
+        },
+        {
+            "source": "mobile-fundamentals",
+            "target": "flutter"
+        },
+        {
+            "source": "mobile-fundamentals",
+            "target": "native-ios"
+        },
+        {
+            "source": "mobile-fundamentals",
+            "target": "native-android"
+        },
+        {
+            "source": "react-native",
+            "target": "mobile-apis"
+        },
+        {
+            "source": "flutter",
+            "target": "mobile-apis"
+        },
+        {
+            "source": "native-ios",
+            "target": "mobile-apis"
+        },
+        {
+            "source": "native-android",
+            "target": "mobile-apis"
+        },
+        {
+            "source": "mobile-apis",
+            "target": "app-store"
+        }
+    ]
+}

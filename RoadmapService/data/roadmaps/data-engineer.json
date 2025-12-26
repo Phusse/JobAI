@@ -1,0 +1,170 @@
+{
+    "career_id": "data-engineer",
+    "title": "Data Engineer Roadmap",
+    "description": "Build and maintain data pipelines and infrastructure",
+    "category": "data",
+    "nodes": [
+        {
+            "id": "python",
+            "label": "Python Programming",
+            "description": "Python fundamentals and data manipulation",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "Python for Data Engineering",
+                    "url": "https://www.youtube.com/watch?v=_uQrJ0TkZlc",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "6h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "sql",
+            "label": "SQL & Databases",
+            "description": "Advanced SQL, database design, and optimization",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "SQL Full Course",
+                    "url": "https://www.youtube.com/watch?v=HXV3zeQKqGY",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "4h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "etl",
+            "label": "ETL Fundamentals",
+            "description": "Extract, Transform, Load processes",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "ETL Tutorial",
+                    "url": "https://www.youtube.com/watch?v=OWF5S3L8pFo",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "1h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "spark",
+            "label": "Apache Spark",
+            "description": "Big data processing with PySpark",
+            "estimatedTime": "4-6 weeks",
+            "resources": [
+                {
+                    "title": "PySpark Tutorial",
+                    "url": "https://www.youtube.com/watch?v=_C8kWso4ne4",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "6h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "airflow",
+            "label": "Apache Airflow",
+            "description": "Workflow orchestration and scheduling",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "Airflow Tutorial",
+                    "url": "https://www.youtube.com/watch?v=K9AnJ9_ZAXE",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "2h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "data-warehousing",
+            "label": "Data Warehousing",
+            "description": "Snowflake, BigQuery, or Redshift",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "Data Warehouse Concepts",
+                    "url": "https://www.youtube.com/watch?v=AHR_7jFCMeY",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "2h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "cloud",
+            "label": "Cloud Platforms",
+            "description": "AWS, GCP, or Azure data services",
+            "estimatedTime": "4-6 weeks",
+            "resources": [
+                {
+                    "title": "AWS Data Engineering",
+                    "url": "https://www.youtube.com/watch?v=e6_YZ9u1l8A",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "4h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "streaming",
+            "label": "Real-time Streaming",
+            "description": "Kafka, Kinesis, and stream processing",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "Apache Kafka Tutorial",
+                    "url": "https://www.youtube.com/watch?v=qu96DFXtbG4",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "2h",
+                    "free": true
+                }
+            ]
+        }
+    ],
+    "edges": [
+        {
+            "source": "python",
+            "target": "sql"
+        },
+        {
+            "source": "sql",
+            "target": "etl"
+        },
+        {
+            "source": "etl",
+            "target": "spark"
+        },
+        {
+            "source": "etl",
+            "target": "airflow"
+        },
+        {
+            "source": "spark",
+            "target": "data-warehousing"
+        },
+        {
+            "source": "airflow",
+            "target": "data-warehousing"
+        },
+        {
+            "source": "data-warehousing",
+            "target": "cloud"
+        },
+        {
+            "source": "cloud",
+            "target": "streaming"
+        }
+    ]
+}

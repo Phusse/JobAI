@@ -1,0 +1,202 @@
+{
+    "career_id": "tech-lead",
+    "title": "Technical Lead Roadmap",
+    "description": "Lead development teams technically, make architectural decisions, and mentor developers",
+    "category": "development",
+    "is_role": true,
+    "role_requirements": {
+        "experience_years": "4-6+ years in software development",
+        "prerequisite_paths": [
+            "backend-dev",
+            "fullstack-dev",
+            "frontend-dev"
+        ],
+        "soft_skills": [
+            "Mentoring",
+            "Communication",
+            "Decision Making",
+            "Systems Thinking",
+            "Conflict Resolution"
+        ],
+        "technical_foundation": "Expert-level skills in at least one technology stack"
+    },
+    "nodes": [
+        {
+            "id": "senior-dev",
+            "label": "Senior Developer Skills",
+            "description": "Master your chosen stack. Write production-quality code and understand system design.",
+            "estimatedTime": "3-4 years",
+            "resources": [
+                {
+                    "title": "Senior Developer Path",
+                    "url": "https://www.youtube.com/watch?v=DJtef410XaM",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "25m",
+                    "free": true
+                },
+                {
+                    "title": "Clean Code",
+                    "url": "https://www.youtube.com/watch?v=7EmboKQH8lM",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "1h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "system-design",
+            "label": "System Design",
+            "description": "Design scalable, reliable systems. Understand tradeoffs and architectural patterns.",
+            "estimatedTime": "3-6 months",
+            "resources": [
+                {
+                    "title": "System Design Primer",
+                    "url": "https://github.com/donnemartin/system-design-primer",
+                    "type": "docs",
+                    "platform": "GitHub",
+                    "free": true
+                },
+                {
+                    "title": "System Design Interview",
+                    "url": "https://www.youtube.com/watch?v=UzLMhqg3_Wc",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "1h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "code-review",
+            "label": "Code Review Mastery",
+            "description": "Give constructive feedback, maintain code quality standards, and establish best practices",
+            "estimatedTime": "1-2 months",
+            "resources": [
+                {
+                    "title": "Code Review Best Practices",
+                    "url": "https://www.youtube.com/watch?v=rR4n-0KYeKQ",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "20m",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "mentoring",
+            "label": "Technical Mentoring",
+            "description": "Guide junior developers, pair programming, and knowledge sharing",
+            "estimatedTime": "2-3 months",
+            "resources": [
+                {
+                    "title": "Mentoring Developers",
+                    "url": "https://www.youtube.com/watch?v=3K3qSvE2VbU",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "25m",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "tech-decisions",
+            "label": "Technical Decision Making",
+            "description": "Evaluate technologies, write RFCs/ADRs, and manage technical debt",
+            "estimatedTime": "2-3 months",
+            "resources": [
+                {
+                    "title": "Making Tech Decisions",
+                    "url": "https://www.youtube.com/watch?v=8bxZuzDKoI0",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "30m",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "project-planning",
+            "label": "Technical Project Planning",
+            "description": "Break down projects, estimate effort, identify risks, and coordinate delivery",
+            "estimatedTime": "2-3 months",
+            "resources": [
+                {
+                    "title": "Project Planning for Developers",
+                    "url": "https://www.youtube.com/watch?v=HwEp_qRB0TA",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "30m",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "communication",
+            "label": "Stakeholder Communication",
+            "description": "Translate technical concepts for non-technical stakeholders, manage expectations",
+            "estimatedTime": "1-2 months",
+            "resources": [
+                {
+                    "title": "Tech Communication Skills",
+                    "url": "https://www.youtube.com/watch?v=_u4t5RQDl_A",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "25m",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "team-dynamics",
+            "label": "Team Dynamics",
+            "description": "Build team culture, handle conflicts, and foster collaboration",
+            "estimatedTime": "2-3 months",
+            "resources": [
+                {
+                    "title": "Building Dev Teams",
+                    "url": "https://www.youtube.com/watch?v=c3LK8EJQ_no",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "30m",
+                    "free": true
+                }
+            ]
+        }
+    ],
+    "edges": [
+        {
+            "source": "senior-dev",
+            "target": "system-design"
+        },
+        {
+            "source": "senior-dev",
+            "target": "code-review"
+        },
+        {
+            "source": "system-design",
+            "target": "tech-decisions"
+        },
+        {
+            "source": "code-review",
+            "target": "mentoring"
+        },
+        {
+            "source": "mentoring",
+            "target": "team-dynamics"
+        },
+        {
+            "source": "tech-decisions",
+            "target": "project-planning"
+        },
+        {
+            "source": "project-planning",
+            "target": "communication"
+        },
+        {
+            "source": "communication",
+            "target": "team-dynamics"
+        }
+    ]
+}

@@ -1,0 +1,264 @@
+{
+    "career_id": "data-scientist",
+    "title": "Data Scientist Roadmap",
+    "description": "Master data analysis, machine learning, and statistical modeling",
+    "category": "data",
+    "icon": null,
+    "nodes": [
+        {
+            "id": "python",
+            "label": "Python Programming",
+            "description": "Python fundamentals, data structures, and programming concepts",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "Python for Data Science",
+                    "url": "https://www.youtube.com/watch?v=LHBE6Q9XlzI",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "12h",
+                    "free": true
+                },
+                {
+                    "title": "Python.org Tutorial",
+                    "url": "https://docs.python.org/3/tutorial/",
+                    "type": "docs",
+                    "platform": "Python",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "math",
+            "label": "Mathematics & Statistics",
+            "description": "Linear algebra, calculus, probability, and statistics fundamentals",
+            "estimatedTime": "4-6 weeks",
+            "resources": [
+                {
+                    "title": "Khan Academy Statistics",
+                    "url": "https://www.khanacademy.org/math/statistics-probability",
+                    "type": "course",
+                    "platform": "Khan Academy",
+                    "free": true
+                },
+                {
+                    "title": "3Blue1Brown Linear Algebra",
+                    "url": "https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "numpy-pandas",
+            "label": "NumPy & Pandas",
+            "description": "Data manipulation, numerical computing, and dataframe operations",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "NumPy Tutorial",
+                    "url": "https://www.youtube.com/watch?v=QUT1VHiLmmI",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "1h",
+                    "free": true
+                },
+                {
+                    "title": "Pandas in 10 Minutes",
+                    "url": "https://pandas.pydata.org/docs/user_guide/10min.html",
+                    "type": "docs",
+                    "platform": "Pandas",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "visualization",
+            "label": "Data Visualization",
+            "description": "Matplotlib, Seaborn, Plotly, and storytelling with data",
+            "estimatedTime": "2 weeks",
+            "resources": [
+                {
+                    "title": "Matplotlib Tutorial",
+                    "url": "https://www.youtube.com/watch?v=3Xc3CA655Y4",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "3h",
+                    "free": true
+                },
+                {
+                    "title": "Seaborn Documentation",
+                    "url": "https://seaborn.pydata.org/tutorial.html",
+                    "type": "docs",
+                    "platform": "Seaborn",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "sql",
+            "label": "SQL & Databases",
+            "description": "Query databases, joins, aggregations, and data extraction",
+            "estimatedTime": "2 weeks",
+            "resources": [
+                {
+                    "title": "SQL Full Course",
+                    "url": "https://www.youtube.com/watch?v=HXV3zeQKqGY",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "4h",
+                    "free": true
+                },
+                {
+                    "title": "Mode SQL Tutorial",
+                    "url": "https://mode.com/sql-tutorial/",
+                    "type": "course",
+                    "platform": "Mode",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "ml-basics",
+            "label": "Machine Learning Basics",
+            "description": "Supervised/unsupervised learning, regression, classification, clustering",
+            "estimatedTime": "4-6 weeks",
+            "resources": [
+                {
+                    "title": "Machine Learning Course",
+                    "url": "https://www.youtube.com/watch?v=Gv9_4yMHFhI",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "4h",
+                    "free": true
+                },
+                {
+                    "title": "Scikit-learn Docs",
+                    "url": "https://scikit-learn.org/stable/tutorial/",
+                    "type": "docs",
+                    "platform": "Scikit-learn",
+                    "free": true
+                },
+                {
+                    "title": "Google ML Crash Course",
+                    "url": "https://developers.google.com/machine-learning/crash-course",
+                    "type": "course",
+                    "platform": "Google",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "feature-engineering",
+            "label": "Feature Engineering",
+            "description": "Data preprocessing, feature selection, and transformation techniques",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "Feature Engineering Techniques",
+                    "url": "https://www.youtube.com/watch?v=6WDFfaYtN6s",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "2h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "deep-learning",
+            "label": "Deep Learning",
+            "description": "Neural networks, TensorFlow/PyTorch, CNNs, RNNs",
+            "estimatedTime": "6-8 weeks",
+            "resources": [
+                {
+                    "title": "Deep Learning Specialization",
+                    "url": "https://www.coursera.org/specializations/deep-learning",
+                    "type": "course",
+                    "platform": "Coursera",
+                    "free": false
+                },
+                {
+                    "title": "PyTorch Tutorial",
+                    "url": "https://www.youtube.com/watch?v=c36lUUr864M",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "9h",
+                    "free": true
+                },
+                {
+                    "title": "Fast.ai Practical Deep Learning",
+                    "url": "https://course.fast.ai/",
+                    "type": "course",
+                    "platform": "Fast.ai",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "model-deployment",
+            "label": "Model Deployment",
+            "description": "MLOps, model serving, APIs, and production ML systems",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "ML Model Deployment",
+                    "url": "https://www.youtube.com/watch?v=H73m9XvKHug",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "2h",
+                    "free": true
+                },
+                {
+                    "title": "MLflow Documentation",
+                    "url": "https://mlflow.org/docs/latest/index.html",
+                    "type": "docs",
+                    "platform": "MLflow",
+                    "free": true
+                }
+            ]
+        }
+    ],
+    "edges": [
+        {
+            "source": "python",
+            "target": "numpy-pandas"
+        },
+        {
+            "source": "python",
+            "target": "math"
+        },
+        {
+            "source": "numpy-pandas",
+            "target": "visualization"
+        },
+        {
+            "source": "numpy-pandas",
+            "target": "sql"
+        },
+        {
+            "source": "math",
+            "target": "ml-basics"
+        },
+        {
+            "source": "visualization",
+            "target": "ml-basics"
+        },
+        {
+            "source": "sql",
+            "target": "ml-basics"
+        },
+        {
+            "source": "ml-basics",
+            "target": "feature-engineering"
+        },
+        {
+            "source": "feature-engineering",
+            "target": "deep-learning"
+        },
+        {
+            "source": "deep-learning",
+            "target": "model-deployment"
+        }
+    ]
+}

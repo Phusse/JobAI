@@ -1,0 +1,146 @@
+{
+    "career_id": "security-analyst",
+    "title": "Cybersecurity Analyst Roadmap",
+    "description": "Protect systems and networks from cyber threats",
+    "category": "security",
+    "nodes": [
+        {
+            "id": "networking",
+            "label": "Networking Fundamentals",
+            "description": "TCP/IP, DNS, firewalls, and network protocols",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "Networking Fundamentals",
+                    "url": "https://www.youtube.com/watch?v=qiQR5rTSshw",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "4h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "linux",
+            "label": "Linux Administration",
+            "description": "Linux commands, permissions, and security",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "Linux for Security",
+                    "url": "https://www.youtube.com/watch?v=wBp0Rb-ZJak",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "5h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "security-fundamentals",
+            "label": "Security Fundamentals",
+            "description": "CIA triad, threats, and security principles",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "Cybersecurity Fundamentals",
+                    "url": "https://www.youtube.com/watch?v=hXSFdwIOfnE",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "2h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "siem",
+            "label": "SIEM Tools",
+            "description": "Security monitoring with Splunk or ELK",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "Splunk Tutorial",
+                    "url": "https://www.youtube.com/watch?v=Tr8MYJD8oFI",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "3h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "threat-analysis",
+            "label": "Threat Analysis",
+            "description": "Identify and analyze security threats",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "Threat Intelligence",
+                    "url": "https://www.youtube.com/watch?v=5wMCnfULez0",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "2h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "incident-response",
+            "label": "Incident Response",
+            "description": "Respond to and recover from security incidents",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "Incident Response Tutorial",
+                    "url": "https://www.youtube.com/watch?v=YGCjzHnTqHs",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "1.5h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "certifications",
+            "label": "Security Certifications",
+            "description": "CompTIA Security+, CEH, or CISSP prep",
+            "estimatedTime": "4-8 weeks",
+            "resources": [
+                {
+                    "title": "Security+ Full Course",
+                    "url": "https://www.youtube.com/watch?v=9NE33fpQuw8",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "5h",
+                    "free": true
+                }
+            ]
+        }
+    ],
+    "edges": [
+        {
+            "source": "networking",
+            "target": "linux"
+        },
+        {
+            "source": "linux",
+            "target": "security-fundamentals"
+        },
+        {
+            "source": "security-fundamentals",
+            "target": "siem"
+        },
+        {
+            "source": "siem",
+            "target": "threat-analysis"
+        },
+        {
+            "source": "threat-analysis",
+            "target": "incident-response"
+        },
+        {
+            "source": "incident-response",
+            "target": "certifications"
+        }
+    ]
+}

@@ -1,0 +1,174 @@
+{
+    "career_id": "ml-engineer",
+    "title": "Machine Learning Engineer Roadmap",
+    "description": "Build and deploy production ML systems",
+    "category": "data",
+    "icon": null,
+    "nodes": [
+        {
+            "id": "python",
+            "label": "Python & Programming",
+            "description": "Python fundamentals, OOP, and software engineering",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "Python for ML",
+                    "url": "https://www.youtube.com/watch?v=7eh4d6sabA0",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "5h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "math",
+            "label": "Math for ML",
+            "description": "Linear algebra, calculus, probability, statistics",
+            "estimatedTime": "4-6 weeks",
+            "resources": [
+                {
+                    "title": "Mathematics for ML",
+                    "url": "https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "ml-fundamentals",
+            "label": "ML Fundamentals",
+            "description": "Supervised, unsupervised learning, model evaluation",
+            "estimatedTime": "4-6 weeks",
+            "resources": [
+                {
+                    "title": "ML Course",
+                    "url": "https://www.youtube.com/watch?v=Gv9_4yMHFhI",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "4h",
+                    "free": true
+                },
+                {
+                    "title": "Google ML Crash Course",
+                    "url": "https://developers.google.com/machine-learning/crash-course",
+                    "type": "course",
+                    "platform": "Google",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "deep-learning",
+            "label": "Deep Learning",
+            "description": "Neural networks, CNNs, RNNs, Transformers",
+            "estimatedTime": "6-8 weeks",
+            "resources": [
+                {
+                    "title": "Deep Learning Course",
+                    "url": "https://www.youtube.com/watch?v=c36lUUr864M",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "9h",
+                    "free": true
+                },
+                {
+                    "title": "Fast.ai",
+                    "url": "https://course.fast.ai/",
+                    "type": "course",
+                    "platform": "Fast.ai",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "frameworks",
+            "label": "ML Frameworks",
+            "description": "PyTorch, TensorFlow, scikit-learn",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "PyTorch Tutorial",
+                    "url": "https://pytorch.org/tutorials/",
+                    "type": "docs",
+                    "platform": "PyTorch",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "mlops",
+            "label": "MLOps",
+            "description": "Model versioning, experiment tracking, pipelines",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "MLOps Course",
+                    "url": "https://www.youtube.com/watch?v=9BgIDqAzfuA",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "4h",
+                    "free": true
+                },
+                {
+                    "title": "MLflow Docs",
+                    "url": "https://mlflow.org/docs/latest/index.html",
+                    "type": "docs",
+                    "platform": "MLflow",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "deployment",
+            "label": "Model Deployment",
+            "description": "APIs, Docker, Kubernetes, cloud ML services",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "Deploy ML Models",
+                    "url": "https://www.youtube.com/watch?v=H73m9XvKHug",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "2h",
+                    "free": true
+                }
+            ]
+        }
+    ],
+    "edges": [
+        {
+            "source": "python",
+            "target": "math"
+        },
+        {
+            "source": "python",
+            "target": "ml-fundamentals"
+        },
+        {
+            "source": "math",
+            "target": "ml-fundamentals"
+        },
+        {
+            "source": "ml-fundamentals",
+            "target": "deep-learning"
+        },
+        {
+            "source": "ml-fundamentals",
+            "target": "frameworks"
+        },
+        {
+            "source": "deep-learning",
+            "target": "frameworks"
+        },
+        {
+            "source": "frameworks",
+            "target": "mlops"
+        },
+        {
+            "source": "mlops",
+            "target": "deployment"
+        }
+    ]
+}

@@ -1,0 +1,164 @@
+{
+    "career_id": "ai-researcher",
+    "title": "AI Researcher Roadmap",
+    "description": "Advance the field of artificial intelligence through research, publish papers, and develop new algorithms",
+    "category": "data",
+    "context": "AI Researchers work at the cutting edge of technology, pushing boundaries in machine learning, natural language processing, and computer vision. This is a highly academic role typically requiring advanced degrees (PhD preferred) and involves publishing papers, conducting experiments, and developing novel algorithms. You'll work in research labs at tech giants, universities, or AI startups.",
+    "career_type": "Technical Research",
+    "nodes": [
+        {
+            "id": "strong-math",
+            "label": "Advanced Mathematics",
+            "description": "Master linear algebra, calculus, probability theory, and optimization",
+            "estimatedTime": "6-12 months",
+            "resources": [
+                {
+                    "title": "Mathematics for Machine Learning",
+                    "url": "https://mml-book.github.io/",
+                    "type": "docs",
+                    "platform": "MML Book",
+                    "free": true
+                },
+                {
+                    "title": "Linear Algebra - MIT OCW",
+                    "url": "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+                    "type": "course",
+                    "platform": "MIT",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "ml-foundations",
+            "label": "Machine Learning Foundations",
+            "description": "Deep understanding of ML algorithms, not just how to use them",
+            "estimatedTime": "4-6 months",
+            "resources": [
+                {
+                    "title": "Stanford CS229",
+                    "url": "https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "deep-learning",
+            "label": "Deep Learning Theory",
+            "description": "Neural network architectures, backpropagation, optimization theory",
+            "estimatedTime": "4-6 months",
+            "resources": [
+                {
+                    "title": "Deep Learning Book",
+                    "url": "https://www.deeplearningbook.org/",
+                    "type": "docs",
+                    "platform": "Goodfellow et al.",
+                    "free": true
+                },
+                {
+                    "title": "Fast.ai Course",
+                    "url": "https://course.fast.ai/",
+                    "type": "course",
+                    "platform": "Fast.ai",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "specialization",
+            "label": "Research Specialization",
+            "description": "Choose: NLP, Computer Vision, Reinforcement Learning, or Generative AI",
+            "estimatedTime": "6-12 months",
+            "resources": [
+                {
+                    "title": "Stanford CS231n (Vision)",
+                    "url": "https://www.youtube.com/playlist?list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "free": true
+                },
+                {
+                    "title": "Stanford CS224n (NLP)",
+                    "url": "https://www.youtube.com/playlist?list=PLoROMvodv4rOSH4v6133s9LFPRHjEmbmJ",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "research-methods",
+            "label": "Research Methodology",
+            "description": "Experiment design, ablation studies, reproducibility, and statistical rigor",
+            "estimatedTime": "3-4 months",
+            "resources": [
+                {
+                    "title": "How to Read a Paper",
+                    "url": "https://www.youtube.com/watch?v=SHTOI0KtZnU",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "30m",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "paper-writing",
+            "label": "Academic Writing & Publishing",
+            "description": "Write research papers, submit to conferences (NeurIPS, ICML, CVPR)",
+            "estimatedTime": "3-6 months",
+            "resources": [
+                {
+                    "title": "Writing Tips from Simon Peyton Jones",
+                    "url": "https://www.youtube.com/watch?v=VK51E3gHENc",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "1h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "open-source",
+            "label": "Open Source & Collaboration",
+            "description": "Contribute to research codebases, reproduce papers, and collaborate globally",
+            "estimatedTime": "Ongoing",
+            "resources": [
+                {
+                    "title": "Papers with Code",
+                    "url": "https://paperswithcode.com/",
+                    "type": "docs",
+                    "platform": "Papers with Code",
+                    "free": true
+                }
+            ]
+        }
+    ],
+    "edges": [
+        {
+            "source": "strong-math",
+            "target": "ml-foundations"
+        },
+        {
+            "source": "ml-foundations",
+            "target": "deep-learning"
+        },
+        {
+            "source": "deep-learning",
+            "target": "specialization"
+        },
+        {
+            "source": "specialization",
+            "target": "research-methods"
+        },
+        {
+            "source": "research-methods",
+            "target": "paper-writing"
+        },
+        {
+            "source": "paper-writing",
+            "target": "open-source"
+        }
+    ]
+}

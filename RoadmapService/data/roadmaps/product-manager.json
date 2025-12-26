@@ -1,0 +1,146 @@
+{
+    "career_id": "product-manager",
+    "title": "Product Manager Roadmap",
+    "description": "Lead product strategy and cross-functional teams",
+    "category": "design",
+    "nodes": [
+        {
+            "id": "product-fundamentals",
+            "label": "Product Management Basics",
+            "description": "Product lifecycle, roles, and responsibilities",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "Product Management Fundamentals",
+                    "url": "https://www.youtube.com/watch?v=dMqSn5dJnVk",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "2h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "user-research",
+            "label": "User Research",
+            "description": "Customer interviews, surveys, and personas",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "User Research Methods",
+                    "url": "https://www.youtube.com/watch?v=oFjdRn0xAcc",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "1h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "strategy",
+            "label": "Product Strategy",
+            "description": "Vision, OKRs, and competitive analysis",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "Product Strategy",
+                    "url": "https://www.youtube.com/watch?v=UIJgPZIjC3k",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "1.5h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "roadmapping",
+            "label": "Roadmapping",
+            "description": "Build and communicate product roadmaps",
+            "estimatedTime": "2 weeks",
+            "resources": [
+                {
+                    "title": "Product Roadmapping",
+                    "url": "https://www.youtube.com/watch?v=z_cR0TvyxNg",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "1h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "agile",
+            "label": "Agile & Scrum",
+            "description": "Agile methodologies and sprint planning",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "Agile for Product Managers",
+                    "url": "https://www.youtube.com/watch?v=Z9QbYZh1YXY",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "2h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "analytics",
+            "label": "Product Analytics",
+            "description": "Metrics, KPIs, and data-driven decisions",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "Product Analytics",
+                    "url": "https://www.youtube.com/watch?v=RNGn2UagFow",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "1h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "stakeholder-management",
+            "label": "Stakeholder Management",
+            "description": "Communication and alignment across teams",
+            "estimatedTime": "2 weeks",
+            "resources": [
+                {
+                    "title": "Stakeholder Management",
+                    "url": "https://www.youtube.com/watch?v=_u4t5RQDl_A",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "30m",
+                    "free": true
+                }
+            ]
+        }
+    ],
+    "edges": [
+        {
+            "source": "product-fundamentals",
+            "target": "user-research"
+        },
+        {
+            "source": "user-research",
+            "target": "strategy"
+        },
+        {
+            "source": "strategy",
+            "target": "roadmapping"
+        },
+        {
+            "source": "roadmapping",
+            "target": "agile"
+        },
+        {
+            "source": "agile",
+            "target": "analytics"
+        },
+        {
+            "source": "analytics",
+            "target": "stakeholder-management"
+        }
+    ]
+}

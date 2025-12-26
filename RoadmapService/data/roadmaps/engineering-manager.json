@@ -1,0 +1,202 @@
+{
+    "career_id": "engineering-manager",
+    "title": "Engineering Manager Roadmap",
+    "description": "Lead engineering teams while balancing technical expertise and people management",
+    "category": "management",
+    "is_role": true,
+    "role_requirements": {
+        "experience_years": "5-8+ years in software development",
+        "prerequisite_paths": [
+            "backend-dev",
+            "fullstack-dev",
+            "frontend-dev"
+        ],
+        "soft_skills": [
+            "Leadership",
+            "Communication",
+            "Conflict Resolution",
+            "Strategic Thinking",
+            "Empathy",
+            "Decision Making"
+        ],
+        "technical_foundation": "Strong technical background from a development role"
+    },
+    "nodes": [
+        {
+            "id": "technical-foundation",
+            "label": "Technical Foundation",
+            "description": "Master a technical track first (Frontend, Backend, or Full Stack). You need credibility as an engineer before leading engineers.",
+            "estimatedTime": "3-5 years",
+            "resources": [
+                {
+                    "title": "Staff Engineer Path",
+                    "url": "https://www.youtube.com/watch?v=9iQj6h71LWI",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "1h",
+                    "free": true
+                },
+                {
+                    "title": "The Manager's Path",
+                    "url": "https://www.oreilly.com/library/view/the-managers-path/9781491973882/",
+                    "type": "article",
+                    "platform": "O'Reilly",
+                    "free": false
+                }
+            ]
+        },
+        {
+            "id": "tech-lead",
+            "label": "Tech Lead Experience",
+            "description": "Lead technical projects, make architectural decisions, and mentor junior developers",
+            "estimatedTime": "1-2 years",
+            "resources": [
+                {
+                    "title": "Tech Lead Skills",
+                    "url": "https://www.youtube.com/watch?v=ZnP6qJdRNrs",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "30m",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "people-skills",
+            "label": "People Management Skills",
+            "description": "Learn 1:1s, feedback, coaching, and building psychological safety",
+            "estimatedTime": "3-6 months",
+            "resources": [
+                {
+                    "title": "Engineering Management 101",
+                    "url": "https://www.youtube.com/watch?v=JDrWMIJxGRM",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "45m",
+                    "free": true
+                },
+                {
+                    "title": "Radical Candor",
+                    "url": "https://www.radicalcandor.com/",
+                    "type": "article",
+                    "platform": "Radical Candor",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "hiring",
+            "label": "Hiring & Team Building",
+            "description": "Interview techniques, building diverse teams, and onboarding",
+            "estimatedTime": "2-3 months",
+            "resources": [
+                {
+                    "title": "Tech Hiring Guide",
+                    "url": "https://www.youtube.com/watch?v=PJKYqLP6MRE",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "40m",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "performance",
+            "label": "Performance Management",
+            "description": "Set expectations, give feedback, run performance reviews, handle underperformers",
+            "estimatedTime": "2-3 months",
+            "resources": [
+                {
+                    "title": "Performance Reviews",
+                    "url": "https://www.youtube.com/watch?v=0M2RveYmV9I",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "20m",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "project-delivery",
+            "label": "Project Delivery",
+            "description": "Agile methodologies, sprint planning, risk management, and stakeholder communication",
+            "estimatedTime": "2-3 months",
+            "resources": [
+                {
+                    "title": "Agile for Managers",
+                    "url": "https://www.youtube.com/watch?v=XU0llRltyFM",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "2h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "strategy",
+            "label": "Technical Strategy",
+            "description": "Roadmap planning, technical debt management, and aligning engineering with business",
+            "estimatedTime": "3-6 months",
+            "resources": [
+                {
+                    "title": "Engineering Strategy",
+                    "url": "https://www.youtube.com/watch?v=XM6Y_FLhMqM",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "35m",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "org-leadership",
+            "label": "Organizational Leadership",
+            "description": "Cross-team collaboration, culture building, and managing managers",
+            "estimatedTime": "6-12 months",
+            "resources": [
+                {
+                    "title": "Managing Managers",
+                    "url": "https://www.youtube.com/watch?v=c3LK8EJQ_no",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "30m",
+                    "free": true
+                }
+            ]
+        }
+    ],
+    "edges": [
+        {
+            "source": "technical-foundation",
+            "target": "tech-lead"
+        },
+        {
+            "source": "tech-lead",
+            "target": "people-skills"
+        },
+        {
+            "source": "people-skills",
+            "target": "hiring"
+        },
+        {
+            "source": "people-skills",
+            "target": "performance"
+        },
+        {
+            "source": "hiring",
+            "target": "project-delivery"
+        },
+        {
+            "source": "performance",
+            "target": "project-delivery"
+        },
+        {
+            "source": "project-delivery",
+            "target": "strategy"
+        },
+        {
+            "source": "strategy",
+            "target": "org-leadership"
+        }
+    ]
+}

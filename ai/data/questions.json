@@ -1,7 +1,12 @@
 {
-    "version": "4.0",
-    "lastUpdated": "2024-12-23",
-    "description": "Optimized questionnaire - 18 high-value questions covering all essential traits",
+    "version": "7.0",
+    "lastUpdated": "2024-12-24",
+    "description": "Psychological Archetype Question Bank - 100 questions, serve random 20 per session",
+    "model": "cognitive-archetype-v3",
+    "shuffleConfig": {
+        "questionsPerSession": 20,
+        "ensureArchetypeCoverage": true
+    },
     "answerWeights": {
         "Strongly Agree": 1.0,
         "Agree": 0.6,
@@ -9,211 +14,1151 @@
         "Disagree": -0.4,
         "Strongly Disagree": -0.8
     },
+    "archetypes": {
+        "architect": "Loves structure, logic, systems, and understanding how things work under the hood",
+        "creator": "Visual, tangible results, aesthetics, user experience focused",
+        "detective": "Pattern recognition, truth-seeking, detail-oriented, puzzle solver",
+        "optimizer": "Efficiency obsessed, automation lover, hates waste and repetition",
+        "conductor": "People-oriented, big-picture thinker, organizer, empathetic leader",
+        "pioneer": "Novelty seeker, abstract thinker, future-focused, risk-tolerant"
+    },
     "questions": [
         {
             "id": 1,
-            "text": "When I look at a spreadsheet, I naturally start looking for what the numbers are telling me.",
-            "category": "analytical",
+            "text": "When I get a new gadget, I read the manual before using it.",
+            "archetype": "architect",
             "traits": {
-                "analytical": 2.0,
-                "pattern-recognition": 1.5,
-                "data-driven": 1.0
+                "systematic": 2.0,
+                "technical": 1.5,
+                "thorough": 1.0
             },
             "weight": 1.0
         },
         {
             "id": 2,
-            "text": "I'd rather see proof than trust my gut feeling.",
-            "category": "analytical",
+            "text": "When I hear a strange noise in my car, I feel compelled to find exactly where it's coming from.",
+            "archetype": "detective",
             "traits": {
-                "data-driven": 2.0,
-                "analytical": 1.0,
-                "logical": 1.0
+                "curious": 2.0,
+                "investigative": 2.0,
+                "security": 1.5,
+                "testing": 1.0
             },
-            "weight": 1.0
+            "weight": 1.2
         },
         {
             "id": 3,
-            "text": "When something breaks, I want to understand WHY, not just fix it.",
-            "category": "technical",
+            "text": "I care more about how something looks than how it works under the hood.",
+            "archetype": "creator",
             "traits": {
-                "technical": 2.0,
-                "systems-thinking": 1.5,
-                "curious": 1.0
+                "visual": 2.0,
+                "creative": 1.5,
+                "design": 1.5,
+                "user-centric": 1.0
             },
-            "weight": 1.0
+            "weight": 1.2
         },
         {
             "id": 4,
-            "text": "If I do the same task twice, I start thinking of ways to do it faster.",
-            "category": "technical",
+            "text": "I feel satisfied when I organize a messy drawer so that everything fits perfectly.",
+            "archetype": "optimizer",
             "traits": {
-                "automation": 2.0,
-                "efficiency": 1.5,
-                "technical": 1.0
+                "organized": 2.0,
+                "database": 1.5,
+                "systematic": 1.0,
+                "optimization": 1.0
             },
             "weight": 1.0
         },
         {
             "id": 5,
-            "text": "I enjoy organizing information so it's easy to find later.",
-            "category": "technical",
+            "text": "In a group that's lost or confused, I naturally start suggesting what to do next.",
+            "archetype": "conductor",
             "traits": {
-                "database": 2.0,
-                "technical": 1.0,
-                "optimization": 1.0,
-                "infrastructure": 1.0
+                "leadership": 2.5,
+                "organizing": 2.0,
+                "management": 1.5,
+                "strategic": 1.0
             },
-            "weight": 1.0
+            "weight": 1.3
         },
         {
             "id": 6,
-            "text": "I notice when colors or fonts clash, even when others don't.",
-            "category": "creative",
+            "text": "I enjoy thinking about deep questions like 'What is consciousness?' or 'Will machines ever think?'",
+            "archetype": "pioneer",
             "traits": {
-                "visual": 2.0,
-                "creative": 2.0,
-                "design": 1.5
+                "abstract": 2.0,
+                "mathematical": 1.5,
+                "experimental": 1.5,
+                "innovative": 1.0
             },
             "weight": 1.0
         },
         {
             "id": 7,
-            "text": "I often sketch or plan things out before starting a project.",
-            "category": "creative",
+            "text": "When wrapping a gift, I care more about how it looks than getting it done quickly.",
+            "archetype": "creator",
             "traits": {
+                "visual": 2.0,
                 "creative": 2.0,
-                "prototyping": 1.5,
-                "visual": 1.0,
-                "planning": 1.0
+                "design": 1.5,
+                "tangible": 1.0
             },
             "weight": 1.0
         },
         {
             "id": 8,
-            "text": "I love experiences that transport me to another world (games, movies, VR).",
-            "category": "creative",
+            "text": "It annoys me when people take the long way to do something that could be done faster.",
+            "archetype": "optimizer",
             "traits": {
-                "immersive": 2.0,
-                "creative": 1.5,
-                "interactive": 1.5,
-                "3D": 1.0
+                "efficiency": 2.0,
+                "automation": 2.0,
+                "optimization": 1.5,
+                "performance": 1.0
             },
             "weight": 1.0
         },
         {
             "id": 9,
-            "text": "I naturally take charge when a group project has no clear leader.",
-            "category": "leadership",
+            "text": "When watching a movie, I often predict the plot twist before it happens.",
+            "archetype": "detective",
             "traits": {
-                "leadership": 2.0,
-                "organizing": 2.0,
-                "management": 1.5
+                "pattern-recognition": 2.0,
+                "analytical": 1.5,
+                "investigative": 1.5,
+                "data-driven": 1.0
             },
-            "weight": 1.2
+            "weight": 1.0
         },
         {
             "id": 10,
-            "text": "I think about whether something will make money or meet a real need.",
-            "category": "business",
+            "text": "I prefer building things freely from scratch rather than following a set of instructions.",
+            "archetype": "creator",
             "traits": {
-                "business": 2.0,
-                "strategic": 1.5,
-                "product-sense": 1.5
+                "creative": 2.0,
+                "prototyping": 1.5,
+                "visual": 1.0,
+                "innovative": 1.0
             },
             "weight": 1.2
         },
         {
             "id": 11,
-            "text": "I'd rather guide a team than work alone on my piece.",
-            "category": "leadership",
+            "text": "I often check if doors are locked or appliances are off, even when I'm pretty sure they are.",
+            "archetype": "detective",
             "traits": {
-                "leadership": 2.5,
-                "team-lead": 2.0,
-                "management": 1.5,
-                "collaboration": 1.0
+                "security": 2.0,
+                "reliability": 1.5,
+                "risk-aware": 1.5,
+                "thorough": 1.0
             },
-            "weight": 1.5
+            "weight": 1.0
         },
         {
             "id": 12,
-            "text": "I'm comfortable starting projects without a clear roadmap.",
-            "category": "adaptability",
+            "text": "When planning a group trip, I'm usually the one making the itinerary.",
+            "archetype": "conductor",
             "traits": {
-                "problem-solving": 2.0,
-                "ambiguity-tolerant": 1.5,
-                "innovative": 1.0,
-                "adaptable": 1.5
+                "organizing": 2.0,
+                "leadership": 1.5,
+                "management": 1.5,
+                "prioritization": 1.0
             },
             "weight": 1.0
         },
         {
             "id": 13,
-            "text": "When I see something working, I instinctively think about what could go wrong.",
-            "category": "security",
+            "text": "I enjoy explaining complicated things to people in a way they can easily understand.",
+            "archetype": "conductor",
             "traits": {
-                "security": 2.0,
-                "risk-aware": 2.0,
-                "analytical": 1.0,
-                "reliability": 1.0
-            },
-            "weight": 1.0
-        },
-        {
-            "id": 14,
-            "text": "I'm fascinated by how people find loopholes or ways around rules.",
-            "category": "security",
-            "traits": {
-                "offensive-security": 2.5,
-                "security": 2.0,
-                "creative": 1.0,
-                "hacker-mindset": 1.5
-            },
-            "weight": 1.0
-        },
-        {
-            "id": 15,
-            "text": "I enjoy explaining complicated things in a way anyone can understand.",
-            "category": "communication",
-            "traits": {
-                "mentoring": 2.0,
                 "communication": 2.0,
+                "mentoring": 2.0,
                 "teaching": 1.5,
                 "documentation": 1.0
             },
             "weight": 1.0
         },
         {
-            "id": 16,
-            "text": "I'm fascinated by how people use their phones in everyday life.",
-            "category": "mobile",
+            "id": 14,
+            "text": "I'm usually the first among my friends to try new apps, gadgets, or trends.",
+            "archetype": "pioneer",
             "traits": {
-                "mobile": 2.0,
-                "user-centric": 1.5,
-                "platform-focused": 1.0
+                "experimental": 2.0,
+                "innovative": 2.0,
+                "learning": 1.5,
+                "curious": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 15,
+            "text": "When something goes wrong, I need to understand WHY it happened, not just fix it and move on.",
+            "archetype": "architect",
+            "traits": {
+                "analytical": 2.0,
+                "systems-thinking": 2.0,
+                "technical": 1.5,
+                "investigative": 1.0
+            },
+            "weight": 1.2
+        },
+        {
+            "id": 16,
+            "text": "I notice small details that others usually miss, like a typo in a menu or a crooked picture frame.",
+            "archetype": "detective",
+            "traits": {
+                "detail-oriented": 2.0,
+                "testing": 2.0,
+                "quality": 1.5,
+                "visual": 1.0
             },
             "weight": 1.0
         },
         {
             "id": 17,
-            "text": "I notice small mistakes that others usually overlook.",
-            "category": "testing",
+            "text": "I prefer working on many different things each week rather than focusing deeply on one project for months.",
+            "archetype": "pioneer",
             "traits": {
-                "testing": 2.0,
-                "detail-oriented": 2.0,
-                "quality": 1.5
+                "variety": 2.0,
+                "adaptable": 1.5,
+                "agile": 1.0
             },
             "weight": 1.0
         },
         {
             "id": 18,
-            "text": "I love trying new tools or methods, even if the old ones work fine.",
-            "category": "learning",
+            "text": "I find it interesting to think about how people might cheat or break the rules of a system.",
+            "archetype": "detective",
+            "traits": {
+                "offensive-security": 2.5,
+                "hacker-mindset": 2.0,
+                "security": 1.5,
+                "creative": 1.0
+            },
+            "weight": 1.2
+        },
+        {
+            "id": 19,
+            "text": "When I see a beautiful design (a website, poster, or room), I stop to appreciate it.",
+            "archetype": "creator",
+            "traits": {
+                "visual": 2.0,
+                "creative": 1.5,
+                "design": 1.5,
+                "user-centric": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 20,
+            "text": "If a friend seems upset but hasn't said why, I tend to notice and ask them about it.",
+            "archetype": "conductor",
+            "traits": {
+                "team-player": 2.0,
+                "collaboration": 1.5,
+                "communication": 1.5,
+                "mentoring": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 21,
+            "text": "I enjoy making lists and checking items off as I complete them.",
+            "archetype": "optimizer",
+            "traits": {
+                "organized": 2.0,
+                "systematic": 1.5,
+                "prioritization": 1.0,
+                "efficiency": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 22,
+            "text": "I get excited when I discover a shortcut or hack that saves time.",
+            "archetype": "optimizer",
+            "traits": {
+                "automation": 2.0,
+                "efficiency": 2.0,
+                "technical": 1.0,
+                "optimization": 1.5
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 23,
+            "text": "I often imagine how things could be different in the future.",
+            "archetype": "pioneer",
+            "traits": {
+                "innovative": 2.0,
+                "abstract": 1.5,
+                "experimental": 1.0,
+                "strategic": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 24,
+            "text": "I find it easy to see things from other people's perspectives.",
+            "archetype": "conductor",
+            "traits": {
+                "collaboration": 2.0,
+                "team-player": 1.5,
+                "communication": 1.5,
+                "user-centric": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 25,
+            "text": "I prefer knowing how something works before I use it.",
+            "archetype": "architect",
+            "traits": {
+                "technical": 2.0,
+                "systems-thinking": 1.5,
+                "analytical": 1.0,
+                "curious": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 26,
+            "text": "I enjoy creating content that people react to (posts, videos, photos).",
+            "archetype": "creator",
+            "traits": {
+                "creative": 2.0,
+                "communication": 2.0,
+                "visual": 1.5,
+                "social": 1.5
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 27,
+            "text": "I feel restless if I'm not learning something new regularly.",
+            "archetype": "pioneer",
+            "traits": {
+                "learning": 2.0,
+                "curious": 2.0,
+                "experimental": 1.0,
+                "innovative": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 28,
+            "text": "When I see numbers or stats, I instinctively start looking for patterns.",
+            "archetype": "detective",
+            "traits": {
+                "analytical": 2.0,
+                "data-driven": 2.0,
+                "pattern-recognition": 1.5,
+                "mathematical": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 29,
+            "text": "I'm drawn to roles where I can influence how a team works together.",
+            "archetype": "conductor",
+            "traits": {
+                "leadership": 2.0,
+                "management": 2.0,
+                "organizing": 1.5,
+                "team-player": 1.0
+            },
+            "weight": 1.2
+        },
+        {
+            "id": 30,
+            "text": "I like making things more visually appealing, even if nobody asked me to.",
+            "archetype": "creator",
+            "traits": {
+                "visual": 2.0,
+                "design": 2.0,
+                "creative": 1.5,
+                "tangible": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 31,
+            "text": "I naturally question whether information I receive is accurate.",
+            "archetype": "detective",
+            "traits": {
+                "investigative": 2.0,
+                "security": 1.5,
+                "analytical": 1.5,
+                "risk-aware": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 32,
+            "text": "I enjoy setting up systems that run smoothly without my constant attention.",
+            "archetype": "architect",
+            "traits": {
+                "infrastructure": 2.0,
+                "automation": 2.0,
+                "systems-thinking": 1.5,
+                "optimization": 1.0
+            },
+            "weight": 1.2
+        },
+        {
+            "id": 33,
+            "text": "I'm comfortable being the center of attention when presenting ideas.",
+            "archetype": "conductor",
+            "traits": {
+                "communication": 2.0,
+                "leadership": 1.5,
+                "social": 1.5,
+                "mentoring": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 34,
+            "text": "I trust data and facts more than opinions or feelings.",
+            "archetype": "architect",
+            "traits": {
+                "data-driven": 2.0,
+                "analytical": 2.0,
+                "logical": 1.5,
+                "systematic": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 35,
+            "text": "I enjoy experimenting with new ways of doing things, even if they might fail.",
+            "archetype": "pioneer",
             "traits": {
                 "experimental": 2.0,
+                "innovative": 2.0,
+                "adaptable": 1.0,
+                "learning": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 36,
+            "text": "I prefer working behind the scenes rather than being in the spotlight.",
+            "archetype": "architect",
+            "traits": {
+                "technical": 2.0,
+                "focused": 1.5,
+                "systematic": 1.0,
+                "infrastructure": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 37,
+            "text": "I feel satisfied when I make a process more efficient than it was before.",
+            "archetype": "optimizer",
+            "traits": {
+                "optimization": 2.0,
+                "efficiency": 2.0,
+                "automation": 1.5,
+                "performance": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 38,
+            "text": "I often think about what could go wrong before it actually happens.",
+            "archetype": "detective",
+            "traits": {
+                "risk-aware": 2.0,
+                "security": 2.0,
+                "analytical": 1.0,
+                "reliability": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 39,
+            "text": "I get excited about building things people will actually use.",
+            "archetype": "creator",
+            "traits": {
+                "user-centric": 2.0,
+                "tangible": 2.0,
+                "creative": 1.5,
+                "visual": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 40,
+            "text": "I'm good at breaking down complex problems into smaller, manageable parts.",
+            "archetype": "architect",
+            "traits": {
+                "systems-thinking": 2.0,
+                "analytical": 2.0,
+                "logical": 1.5,
+                "technical": 1.0
+            },
+            "weight": 1.2
+        },
+        {
+            "id": 41,
+            "text": "I would rather fix something myself than call someone to do it.",
+            "archetype": "architect",
+            "traits": {
+                "technical": 2.0,
+                "curious": 1.5,
+                "systematic": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 42,
+            "text": "I enjoy debates and defending my point of view with logic.",
+            "archetype": "architect",
+            "traits": {
+                "logical": 2.0,
+                "analytical": 1.5,
+                "communication": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 43,
+            "text": "I get frustrated when software or websites are poorly designed.",
+            "archetype": "creator",
+            "traits": {
+                "design": 2.0,
+                "user-centric": 2.0,
+                "visual": 1.5
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 44,
+            "text": "I often doodle, sketch, or visualize ideas when thinking.",
+            "archetype": "creator",
+            "traits": {
+                "visual": 2.0,
+                "creative": 2.0,
+                "prototyping": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 45,
+            "text": "I enjoy taking photos or videos to capture moments.",
+            "archetype": "creator",
+            "traits": {
+                "visual": 2.0,
+                "creative": 1.5,
+                "tangible": 1.0,
+                "social": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 46,
+            "text": "I like it when my work has a visible, tangible outcome.",
+            "archetype": "creator",
+            "traits": {
+                "tangible": 2.0,
+                "creative": 1.5,
+                "visual": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 47,
+            "text": "I can usually tell when someone is lying or hiding something.",
+            "archetype": "detective",
+            "traits": {
+                "investigative": 2.0,
+                "pattern-recognition": 1.5,
+                "security": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 48,
+            "text": "I enjoy puzzles, riddles, or brain teasers.",
+            "archetype": "detective",
+            "traits": {
+                "analytical": 2.0,
+                "pattern-recognition": 2.0,
+                "logical": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 49,
+            "text": "I read reviews and research products thoroughly before buying.",
+            "archetype": "detective",
+            "traits": {
+                "investigative": 2.0,
+                "thorough": 1.5,
+                "data-driven": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 50,
+            "text": "I'm skeptical of claims until I see evidence.",
+            "archetype": "detective",
+            "traits": {
+                "analytical": 2.0,
+                "investigative": 1.5,
+                "risk-aware": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 51,
+            "text": "I hate doing the same task repeatedly if it could be automated.",
+            "archetype": "optimizer",
+            "traits": {
+                "automation": 2.5,
+                "efficiency": 2.0,
+                "optimization": 1.5
+            },
+            "weight": 1.2
+        },
+        {
+            "id": 52,
+            "text": "I often reorganize my workspace, files, or apps for better efficiency.",
+            "archetype": "optimizer",
+            "traits": {
+                "organized": 2.0,
+                "efficiency": 1.5,
+                "systematic": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 53,
+            "text": "I track my habits, finances, or fitness with apps or spreadsheets.",
+            "archetype": "optimizer",
+            "traits": {
+                "data-driven": 2.0,
+                "systematic": 1.5,
+                "optimization": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 54,
+            "text": "I get satisfaction from deleting unused files or unsubscribing from emails.",
+            "archetype": "optimizer",
+            "traits": {
+                "efficiency": 2.0,
+                "organized": 1.5,
+                "optimization": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 55,
+            "text": "I tend to take charge in group projects or team activities.",
+            "archetype": "conductor",
+            "traits": {
+                "leadership": 2.5,
+                "organizing": 2.0,
+                "management": 1.0
+            },
+            "weight": 1.2
+        },
+        {
+            "id": 56,
+            "text": "I enjoy helping others grow and develop their skills.",
+            "archetype": "conductor",
+            "traits": {
+                "mentoring": 2.5,
+                "teaching": 2.0,
+                "communication": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 57,
+            "text": "I'm good at mediating conflicts between people.",
+            "archetype": "conductor",
+            "traits": {
+                "collaboration": 2.0,
+                "communication": 2.0,
+                "team-player": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 58,
+            "text": "I prefer working in teams rather than alone.",
+            "archetype": "conductor",
+            "traits": {
+                "team-player": 2.0,
+                "collaboration": 2.0,
+                "social": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 59,
+            "text": "I enjoy brainstorming sessions where wild ideas are encouraged.",
+            "archetype": "pioneer",
+            "traits": {
+                "innovative": 2.0,
+                "experimental": 1.5,
+                "creative": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 60,
+            "text": "I'm comfortable with uncertainty and ambiguity in projects.",
+            "archetype": "pioneer",
+            "traits": {
+                "adaptable": 2.0,
+                "experimental": 1.5,
+                "innovative": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 61,
+            "text": "I like working on projects that have never been done before.",
+            "archetype": "pioneer",
+            "traits": {
+                "innovative": 2.5,
+                "experimental": 2.0,
+                "learning": 1.0
+            },
+            "weight": 1.2
+        },
+        {
+            "id": 62,
+            "text": "I get bored easily with routine tasks.",
+            "archetype": "pioneer",
+            "traits": {
+                "variety": 2.0,
+                "experimental": 1.5,
+                "adaptable": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 63,
+            "text": "I like understanding the 'why' behind rules and processes.",
+            "archetype": "architect",
+            "traits": {
+                "systems-thinking": 2.0,
+                "analytical": 1.5,
+                "curious": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 64,
+            "text": "I prefer structured environments with clear expectations.",
+            "archetype": "architect",
+            "traits": {
+                "systematic": 2.0,
+                "organized": 1.5,
+                "reliability": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 65,
+            "text": "I enjoy building or assembling things (furniture, electronics, etc.).",
+            "archetype": "architect",
+            "traits": {
+                "technical": 2.0,
+                "tangible": 1.5,
+                "systematic": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 66,
+            "text": "I like creating mood boards, color palettes, or aesthetic collections.",
+            "archetype": "creator",
+            "traits": {
+                "visual": 2.0,
+                "design": 2.0,
+                "creative": 1.5
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 67,
+            "text": "I pay attention to fonts, spacing, and alignment in documents.",
+            "archetype": "creator",
+            "traits": {
+                "design": 2.0,
+                "detail-oriented": 1.5,
+                "visual": 1.5
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 68,
+            "text": "I enjoy customizing my phone, desktop, or living space.",
+            "archetype": "creator",
+            "traits": {
+                "creative": 2.0,
+                "visual": 1.5,
+                "tangible": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 69,
+            "text": "I notice when something feels 'off' even if I can't explain why.",
+            "archetype": "detective",
+            "traits": {
+                "pattern-recognition": 2.0,
+                "investigative": 1.5,
+                "testing": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 70,
+            "text": "I enjoy finding bugs, errors, or inconsistencies in things.",
+            "archetype": "detective",
+            "traits": {
+                "testing": 2.5,
+                "quality": 2.0,
+                "detail-oriented": 1.5
+            },
+            "weight": 1.2
+        },
+        {
+            "id": 71,
+            "text": "I keep detailed notes, logs, or journals.",
+            "archetype": "detective",
+            "traits": {
+                "documentation": 2.0,
+                "thorough": 1.5,
+                "organized": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 72,
+            "text": "I set reminders and alarms to stay on schedule.",
+            "archetype": "optimizer",
+            "traits": {
+                "organized": 2.0,
+                "systematic": 1.5,
+                "efficiency": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 73,
+            "text": "I batch similar tasks together to save time.",
+            "archetype": "optimizer",
+            "traits": {
+                "efficiency": 2.0,
+                "optimization": 2.0,
+                "systematic": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 74,
+            "text": "I often look for ways to simplify complex processes.",
+            "archetype": "optimizer",
+            "traits": {
+                "optimization": 2.0,
+                "systems-thinking": 1.5,
+                "efficiency": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 75,
+            "text": "I remember people's names, preferences, and personal details.",
+            "archetype": "conductor",
+            "traits": {
+                "social": 2.0,
+                "collaboration": 1.5,
+                "communication": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 76,
+            "text": "I'm often the one who organizes social gatherings or events.",
+            "archetype": "conductor",
+            "traits": {
+                "organizing": 2.0,
+                "social": 2.0,
+                "leadership": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 77,
+            "text": "I check in on friends and colleagues regularly.",
+            "archetype": "conductor",
+            "traits": {
+                "team-player": 2.0,
+                "communication": 1.5,
+                "mentoring": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 78,
+            "text": "I follow tech news, science discoveries, or industry trends.",
+            "archetype": "pioneer",
+            "traits": {
+                "learning": 2.0,
+                "innovative": 1.5,
+                "curious": 1.5
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 79,
+            "text": "I enjoy thinking about how technology will change society.",
+            "archetype": "pioneer",
+            "traits": {
+                "abstract": 2.0,
+                "innovative": 1.5,
+                "strategic": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 80,
+            "text": "I'm interested in AI, blockchain, VR, or other emerging technologies.",
+            "archetype": "pioneer",
+            "traits": {
+                "innovative": 2.0,
+                "experimental": 2.0,
+                "learning": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 81,
+            "text": "I prefer having a detailed plan before starting a project.",
+            "archetype": "architect",
+            "traits": {
+                "systematic": 2.0,
+                "thorough": 1.5,
+                "organized": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 82,
+            "text": "I enjoy learning how complex systems work (engines, networks, economies).",
+            "archetype": "architect",
+            "traits": {
+                "systems-thinking": 2.5,
+                "technical": 2.0,
+                "curious": 1.0
+            },
+            "weight": 1.2
+        },
+        {
+            "id": 83,
+            "text": "I find satisfaction in writing clean, well-organized documents or code.",
+            "archetype": "architect",
+            "traits": {
+                "systematic": 2.0,
+                "technical": 1.5,
+                "documentation": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 84,
+            "text": "I like choosing the perfect words when writing messages.",
+            "archetype": "creator",
+            "traits": {
+                "communication": 2.0,
+                "creative": 1.5,
+                "documentation": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 85,
+            "text": "I notice and appreciate good branding and marketing.",
+            "archetype": "creator",
+            "traits": {
+                "visual": 2.0,
+                "design": 1.5,
+                "social": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 86,
+            "text": "I enjoy editing photos or videos to make them look better.",
+            "archetype": "creator",
+            "traits": {
+                "visual": 2.0,
+                "creative": 2.0,
+                "design": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 87,
+            "text": "I often fact-check things I read online.",
+            "archetype": "detective",
+            "traits": {
+                "investigative": 2.0,
+                "analytical": 1.5,
+                "security": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 88,
+            "text": "I'm cautious about sharing personal information online.",
+            "archetype": "detective",
+            "traits": {
+                "security": 2.5,
+                "risk-aware": 2.0,
+                "thorough": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 89,
+            "text": "I use strong, unique passwords for different accounts.",
+            "archetype": "detective",
+            "traits": {
+                "security": 2.0,
+                "systematic": 1.5,
+                "risk-aware": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 90,
+            "text": "I compare prices across multiple sites before buying.",
+            "archetype": "optimizer",
+            "traits": {
+                "efficiency": 2.0,
+                "data-driven": 1.5,
+                "optimization": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 91,
+            "text": "I meal prep or plan my week in advance.",
+            "archetype": "optimizer",
+            "traits": {
+                "organized": 2.0,
+                "efficiency": 1.5,
+                "systematic": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 92,
+            "text": "I unsubscribe from services I no longer use.",
+            "archetype": "optimizer",
+            "traits": {
+                "efficiency": 2.0,
+                "organized": 1.5,
+                "optimization": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 93,
+            "text": "I give constructive feedback to help others improve.",
+            "archetype": "conductor",
+            "traits": {
+                "mentoring": 2.0,
+                "communication": 2.0,
+                "team-player": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 94,
+            "text": "I naturally consider how decisions affect everyone involved.",
+            "archetype": "conductor",
+            "traits": {
+                "strategic": 2.0,
+                "collaboration": 1.5,
+                "user-centric": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 95,
+            "text": "I'm good at getting buy-in from stakeholders.",
+            "archetype": "conductor",
+            "traits": {
+                "communication": 2.0,
+                "leadership": 1.5,
+                "strategic": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 96,
+            "text": "I enjoy speculating about what jobs will exist in 20 years.",
+            "archetype": "pioneer",
+            "traits": {
+                "abstract": 2.0,
+                "innovative": 1.5,
+                "strategic": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 97,
+            "text": "I'm willing to take calculated risks for potential rewards.",
+            "archetype": "pioneer",
+            "traits": {
+                "experimental": 2.0,
+                "innovative": 1.5,
+                "adaptable": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 98,
+            "text": "I enjoy side projects or hobbies outside my main work.",
+            "archetype": "pioneer",
+            "traits": {
+                "variety": 2.0,
                 "learning": 1.5,
-                "curious": 1.0,
-                "variety": 1.0
+                "experimental": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 99,
+            "text": "I would rather understand the fundamentals than memorize shortcuts.",
+            "archetype": "architect",
+            "traits": {
+                "systems-thinking": 2.0,
+                "analytical": 1.5,
+                "learning": 1.0
+            },
+            "weight": 1.0
+        },
+        {
+            "id": 100,
+            "text": "I believe most problems have a logical solution if you think hard enough.",
+            "archetype": "architect",
+            "traits": {
+                "logical": 2.0,
+                "analytical": 2.0,
+                "systematic": 1.0
             },
             "weight": 1.0
         }

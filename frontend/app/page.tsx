@@ -6,7 +6,7 @@ import { Footer } from '../components/Footer';
 
 export const metadata: Metadata = {
   title: "Free Career Assessment - Find Your Perfect Career Path",
-  description: "Take our free 4-minute career assessment. Answer 18 focused questions about how you work and get matched with careers that fit your strengths. No signup required.",
+  description: "Take our free 5-minute career personality quiz. Answer 20 simple questions about your everyday habits and discover which tech career matches your natural thinking style. No experience needed.",
 };
 
 export default function Home() {

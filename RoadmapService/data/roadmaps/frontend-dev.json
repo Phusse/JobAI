@@ -1,0 +1,313 @@
+{
+    "career_id": "frontend-dev",
+    "title": "Frontend Developer Roadmap",
+    "description": "Master the skills needed to build modern web interfaces",
+    "category": "development",
+    "icon": null,
+    "nodes": [
+        {
+            "id": "html",
+            "label": "HTML Fundamentals",
+            "description": "Learn HTML structure, semantic elements, forms, and accessibility basics",
+            "estimatedTime": "1-2 weeks",
+            "resources": [
+                {
+                    "title": "HTML Full Course",
+                    "url": "https://www.youtube.com/watch?v=kUMe1FH4CHE",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "2h",
+                    "free": true
+                },
+                {
+                    "title": "MDN HTML Guide",
+                    "url": "https://developer.mozilla.org/en-US/docs/Learn/HTML",
+                    "type": "docs",
+                    "platform": "MDN",
+                    "free": true
+                },
+                {
+                    "title": "HTML & CSS Course",
+                    "url": "https://www.freecodecamp.org/learn/2022/responsive-web-design/",
+                    "type": "course",
+                    "platform": "FreeCodeCamp",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "css",
+            "label": "CSS Styling",
+            "description": "Master CSS layouts, Flexbox, Grid, animations, and responsive design",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "CSS Complete Guide",
+                    "url": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "6h",
+                    "free": true
+                },
+                {
+                    "title": "Flexbox Froggy",
+                    "url": "https://flexboxfroggy.com/",
+                    "type": "course",
+                    "platform": "Flexbox Froggy",
+                    "free": true
+                },
+                {
+                    "title": "CSS Grid Garden",
+                    "url": "https://cssgridgarden.com/",
+                    "type": "course",
+                    "platform": "Grid Garden",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "js-basics",
+            "label": "JavaScript Basics",
+            "description": "Learn JavaScript fundamentals: variables, functions, DOM manipulation, events",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "JavaScript Full Course",
+                    "url": "https://www.youtube.com/watch?v=PkZNo7MFNFg",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "3.5h",
+                    "free": true
+                },
+                {
+                    "title": "JavaScript.info",
+                    "url": "https://javascript.info/",
+                    "type": "docs",
+                    "platform": "JavaScript.info",
+                    "free": true
+                },
+                {
+                    "title": "FreeCodeCamp JS",
+                    "url": "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/",
+                    "type": "course",
+                    "platform": "FreeCodeCamp",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "js-advanced",
+            "label": "Advanced JavaScript",
+            "description": "Async/await, promises, ES6+, modules, and modern patterns",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "Advanced JS Concepts",
+                    "url": "https://www.youtube.com/watch?v=Bv_5Zv5c-Ts",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "3h",
+                    "free": true
+                },
+                {
+                    "title": "You Don't Know JS",
+                    "url": "https://github.com/getify/You-Dont-Know-JS",
+                    "type": "article",
+                    "platform": "GitHub",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "git",
+            "label": "Git & GitHub",
+            "description": "Version control, branching, pull requests, and collaboration",
+            "estimatedTime": "1 week",
+            "resources": [
+                {
+                    "title": "Git & GitHub Crash Course",
+                    "url": "https://www.youtube.com/watch?v=RGOj5yH7evk",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "1h",
+                    "free": true
+                },
+                {
+                    "title": "Learn Git Branching",
+                    "url": "https://learngitbranching.js.org/",
+                    "type": "course",
+                    "platform": "Learn Git Branching",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "react",
+            "label": "React",
+            "description": "Components, hooks, state management, and the React ecosystem",
+            "estimatedTime": "4-6 weeks",
+            "resources": [
+                {
+                    "title": "React Full Course 2024",
+                    "url": "https://www.youtube.com/watch?v=CgkZ7MvWUAA",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "5h",
+                    "free": true
+                },
+                {
+                    "title": "React Docs",
+                    "url": "https://react.dev/learn",
+                    "type": "docs",
+                    "platform": "React",
+                    "free": true
+                },
+                {
+                    "title": "Full Stack Open",
+                    "url": "https://fullstackopen.com/en/",
+                    "type": "course",
+                    "platform": "Full Stack Open",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "typescript",
+            "label": "TypeScript",
+            "description": "Static typing, interfaces, generics, and type-safe development",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "TypeScript Full Course",
+                    "url": "https://www.youtube.com/watch?v=30LWjhZzg50",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "5h",
+                    "free": true
+                },
+                {
+                    "title": "TypeScript Handbook",
+                    "url": "https://www.typescriptlang.org/docs/handbook/",
+                    "type": "docs",
+                    "platform": "TypeScript",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "nextjs",
+            "label": "Next.js",
+            "description": "Server-side rendering, routing, API routes, and production React",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "Next.js Full Course",
+                    "url": "https://www.youtube.com/watch?v=ZVnjOPwW4ZA",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "4h",
+                    "free": true
+                },
+                {
+                    "title": "Next.js Docs",
+                    "url": "https://nextjs.org/docs",
+                    "type": "docs",
+                    "platform": "Next.js",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "testing",
+            "label": "Testing",
+            "description": "Unit testing, integration testing, Jest, React Testing Library",
+            "estimatedTime": "2 weeks",
+            "resources": [
+                {
+                    "title": "React Testing Tutorial",
+                    "url": "https://www.youtube.com/watch?v=8Xwq35cPwYg",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "1.5h",
+                    "free": true
+                },
+                {
+                    "title": "Testing Library Docs",
+                    "url": "https://testing-library.com/docs/",
+                    "type": "docs",
+                    "platform": "Testing Library",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "deployment",
+            "label": "Deployment & DevOps",
+            "description": "CI/CD, Vercel, Netlify, Docker basics, and production workflows",
+            "estimatedTime": "1-2 weeks",
+            "resources": [
+                {
+                    "title": "Deploy with Vercel",
+                    "url": "https://vercel.com/docs",
+                    "type": "docs",
+                    "platform": "Vercel",
+                    "free": true
+                },
+                {
+                    "title": "GitHub Actions CI/CD",
+                    "url": "https://www.youtube.com/watch?v=R8_veQiYBjI",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "1h",
+                    "free": true
+                }
+            ]
+        }
+    ],
+    "edges": [
+        {
+            "source": "html",
+            "target": "css"
+        },
+        {
+            "source": "css",
+            "target": "js-basics"
+        },
+        {
+            "source": "js-basics",
+            "target": "js-advanced"
+        },
+        {
+            "source": "js-basics",
+            "target": "git"
+        },
+        {
+            "source": "js-advanced",
+            "target": "react"
+        },
+        {
+            "source": "git",
+            "target": "react"
+        },
+        {
+            "source": "react",
+            "target": "typescript"
+        },
+        {
+            "source": "typescript",
+            "target": "nextjs"
+        },
+        {
+            "source": "react",
+            "target": "testing"
+        },
+        {
+            "source": "nextjs",
+            "target": "deployment"
+        },
+        {
+            "source": "testing",
+            "target": "deployment"
+        }
+    ]
+}

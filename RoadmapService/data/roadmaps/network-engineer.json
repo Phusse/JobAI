@@ -1,0 +1,148 @@
+{
+    "career_id": "network-engineer",
+    "title": "Network Engineer Roadmap",
+    "description": "Design, implement, and manage computer networks that connect systems and users",
+    "category": "infrastructure",
+    "context": "Network Engineers build and maintain the infrastructure that connects computers, servers, and devices. You'll work with routers, switches, firewalls, and cloud networking. This role is essential in every organization and offers stable career growth. Certifications like CCNA are highly valued in this field.",
+    "career_type": "Network Infrastructure",
+    "nodes": [
+        {
+            "id": "networking-basics",
+            "label": "Networking Fundamentals",
+            "description": "OSI model, TCP/IP, subnetting, and protocols",
+            "estimatedTime": "4-6 weeks",
+            "resources": [
+                {
+                    "title": "Networking Fundamentals",
+                    "url": "https://www.youtube.com/watch?v=qiQR5rTSshw",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "4h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "routing-switching",
+            "label": "Routing & Switching",
+            "description": "VLANs, spanning tree, OSPF, BGP, and network design",
+            "estimatedTime": "4-6 weeks",
+            "resources": [
+                {
+                    "title": "CCNA Routing & Switching",
+                    "url": "https://www.youtube.com/watch?v=H8W9oMNSuwo",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "8h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "firewalls",
+            "label": "Firewalls & Security",
+            "description": "Firewall configuration, ACLs, and network security",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "Firewall Fundamentals",
+                    "url": "https://www.youtube.com/watch?v=kDEX1HXybrU",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "1h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "wireless",
+            "label": "Wireless Networking",
+            "description": "WiFi standards, site surveys, and wireless security",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "Wireless Networking",
+                    "url": "https://www.youtube.com/watch?v=Uz-RTurph3c",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "1h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "cloud-networking",
+            "label": "Cloud Networking",
+            "description": "VPCs, load balancers, CDNs, and hybrid connectivity",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "AWS VPC Tutorial",
+                    "url": "https://www.youtube.com/watch?v=g2JOHLHh4rI",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "1.5h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "automation",
+            "label": "Network Automation",
+            "description": "Python, Ansible, and network automation tools",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "Network Automation with Python",
+                    "url": "https://www.youtube.com/watch?v=s6SIVc7C5U0",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "2h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "certifications",
+            "label": "Certifications (CCNA)",
+            "description": "Cisco CCNA or equivalent certification",
+            "estimatedTime": "2-3 months",
+            "resources": [
+                {
+                    "title": "CCNA Full Course",
+                    "url": "https://www.youtube.com/watch?v=H8W9oMNSuwo",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "8h",
+                    "free": true
+                }
+            ]
+        }
+    ],
+    "edges": [
+        {
+            "source": "networking-basics",
+            "target": "routing-switching"
+        },
+        {
+            "source": "routing-switching",
+            "target": "firewalls"
+        },
+        {
+            "source": "firewalls",
+            "target": "wireless"
+        },
+        {
+            "source": "wireless",
+            "target": "cloud-networking"
+        },
+        {
+            "source": "cloud-networking",
+            "target": "automation"
+        },
+        {
+            "source": "automation",
+            "target": "certifications"
+        }
+    ]
+}

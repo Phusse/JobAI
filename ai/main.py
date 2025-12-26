@@ -1,4 +1,5 @@
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 import os
 from dotenv import load_dotenv
@@ -13,6 +14,15 @@ app = FastAPI(
     title="JobMatch AI Service",
     description="Career recommendation engine with 50+ careers across 12 industries",
     version="2.0.0"
+)
+
+# CORS middleware to allow frontend access
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3000", "http://127.0.0.1:3000"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 # Import local matching engine
@@ -113,14 +123,62 @@ def get_career_details(career_id: str):
         "category_icon": cat_info.get("icon", "")
     }
 
+import random
+from collections import defaultdict
 
 @app.get("/questions")
-def list_questions():
-    """Get all assessment questions."""
+def list_questions(all: bool = False):
+    """
+    Get assessment questions.
+    By default, returns 20 randomly shuffled questions with balanced archetype coverage.
+    Use ?all=true to get the full question bank (for admin/debugging).
+    """
     questions = get_questions()
+    
+    if all:
+        return {
+            "total": len(questions),
+            "shuffled": False,
+            "questions": questions
+        }
+    
+    # Stratified random selection: ensure all archetypes are covered
+    QUESTIONS_PER_SESSION = 20
+    archetypes = ["architect", "creator", "detective", "optimizer", "conductor", "pioneer"]
+    
+    # Group questions by archetype
+    by_archetype = defaultdict(list)
+    for q in questions:
+        archetype = q.get("archetype", "unknown")
+        by_archetype[archetype].append(q)
+    
+    # Select questions: at least 3 from each archetype, then fill randomly
+    selected = []
+    min_per_archetype = 3
+    
+    for archetype in archetypes:
+        pool = by_archetype.get(archetype, [])
+        if pool:
+            # Random sample from this archetype
+            count = min(min_per_archetype, len(pool))
+            selected.extend(random.sample(pool, count))
+    
+    # Fill remaining slots with random picks from unused questions
+    remaining_slots = QUESTIONS_PER_SESSION - len(selected)
+    if remaining_slots > 0:
+        selected_ids = {q["id"] for q in selected}
+        remaining_questions = [q for q in questions if q["id"] not in selected_ids]
+        if remaining_questions:
+            extra = random.sample(remaining_questions, min(remaining_slots, len(remaining_questions)))
+            selected.extend(extra)
+    
+    # Shuffle final order
+    random.shuffle(selected)
+    
     return {
-        "total": len(questions),
-        "questions": questions
+        "total": len(selected),
+        "shuffled": True,
+        "questions": selected
     }
 
 

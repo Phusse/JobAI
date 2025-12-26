@@ -1,0 +1,150 @@
+{
+    "career_id": "cloud-architect",
+    "title": "Cloud Architect Roadmap",
+    "description": "Design and oversee cloud computing strategy",
+    "category": "infrastructure",
+    "nodes": [
+        {
+            "id": "cloud-fundamentals",
+            "label": "Cloud Fundamentals",
+            "description": "Cloud computing concepts and service models",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "Cloud Computing Explained",
+                    "url": "https://www.youtube.com/watch?v=M988_fsOSWo",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "2h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "aws",
+            "label": "Amazon Web Services",
+            "description": "EC2, S3, Lambda, VPC, and core AWS services",
+            "estimatedTime": "6-8 weeks",
+            "resources": [
+                {
+                    "title": "AWS Certified Solutions Architect",
+                    "url": "https://www.youtube.com/watch?v=Ia-UEYYR44s",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "10h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "azure",
+            "label": "Microsoft Azure",
+            "description": "Azure services and enterprise integration",
+            "estimatedTime": "4-6 weeks",
+            "resources": [
+                {
+                    "title": "Azure Full Course",
+                    "url": "https://www.youtube.com/watch?v=NKEFWyqJ5XA",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "4h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "networking",
+            "label": "Cloud Networking",
+            "description": "VPCs, load balancers, and CDNs",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "Cloud Networking",
+                    "url": "https://www.youtube.com/watch?v=QCVOLeDL1Q4",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "2h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "security",
+            "label": "Cloud Security",
+            "description": "IAM, encryption, and compliance",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "AWS Security Best Practices",
+                    "url": "https://www.youtube.com/watch?v=IfPc4Gva6vA",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "2h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "architecture-patterns",
+            "label": "Architecture Patterns",
+            "description": "Microservices, serverless, and event-driven",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "Cloud Architecture Patterns",
+                    "url": "https://www.youtube.com/watch?v=lL_j7ilk7rc",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "2h",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "cost-optimization",
+            "label": "Cost Optimization",
+            "description": "FinOps and cloud cost management",
+            "estimatedTime": "2 weeks",
+            "resources": [
+                {
+                    "title": "AWS Cost Optimization",
+                    "url": "https://www.youtube.com/watch?v=XQFo6xhHmL0",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "1h",
+                    "free": true
+                }
+            ]
+        }
+    ],
+    "edges": [
+        {
+            "source": "cloud-fundamentals",
+            "target": "aws"
+        },
+        {
+            "source": "cloud-fundamentals",
+            "target": "azure"
+        },
+        {
+            "source": "aws",
+            "target": "networking"
+        },
+        {
+            "source": "azure",
+            "target": "networking"
+        },
+        {
+            "source": "networking",
+            "target": "security"
+        },
+        {
+            "source": "security",
+            "target": "architecture-patterns"
+        },
+        {
+            "source": "architecture-patterns",
+            "target": "cost-optimization"
+        }
+    ]
+}

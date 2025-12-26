@@ -1,0 +1,306 @@
+{
+    "career_id": "backend-dev",
+    "title": "Backend Developer Roadmap",
+    "description": "Build robust server-side applications and APIs",
+    "category": "development",
+    "icon": null,
+    "nodes": [
+        {
+            "id": "programming-basics",
+            "label": "Programming Fundamentals",
+            "description": "Choose a language (Python, Node.js, Java, Go) and master the basics",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "Python Full Course",
+                    "url": "https://www.youtube.com/watch?v=_uQrJ0TkZlc",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "6h",
+                    "free": true
+                },
+                {
+                    "title": "Node.js Full Course",
+                    "url": "https://www.youtube.com/watch?v=Oe421EPjeBE",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "8h",
+                    "free": true
+                },
+                {
+                    "title": "Python for Everybody",
+                    "url": "https://www.py4e.com/",
+                    "type": "course",
+                    "platform": "Py4E",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "git",
+            "label": "Git Version Control",
+            "description": "Master version control, branching strategies, and collaboration",
+            "estimatedTime": "1 week",
+            "resources": [
+                {
+                    "title": "Git & GitHub Crash Course",
+                    "url": "https://www.youtube.com/watch?v=RGOj5yH7evk",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "1h",
+                    "free": true
+                },
+                {
+                    "title": "Pro Git Book",
+                    "url": "https://git-scm.com/book/en/v2",
+                    "type": "docs",
+                    "platform": "Git",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "databases",
+            "label": "Databases",
+            "description": "SQL (PostgreSQL, MySQL) and NoSQL (MongoDB) fundamentals",
+            "estimatedTime": "3-4 weeks",
+            "resources": [
+                {
+                    "title": "SQL Full Course",
+                    "url": "https://www.youtube.com/watch?v=HXV3zeQKqGY",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "4h",
+                    "free": true
+                },
+                {
+                    "title": "MongoDB Crash Course",
+                    "url": "https://www.youtube.com/watch?v=ofme2o29ngU",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "1.5h",
+                    "free": true
+                },
+                {
+                    "title": "SQLBolt",
+                    "url": "https://sqlbolt.com/",
+                    "type": "course",
+                    "platform": "SQLBolt",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "apis",
+            "label": "APIs & REST",
+            "description": "RESTful API design, HTTP methods, status codes, and best practices",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "REST API Tutorial",
+                    "url": "https://www.youtube.com/watch?v=Q-BpqyOT3a8",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "45m",
+                    "free": true
+                },
+                {
+                    "title": "RESTful API Design",
+                    "url": "https://restfulapi.net/",
+                    "type": "docs",
+                    "platform": "RestfulAPI.net",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "frameworks",
+            "label": "Backend Frameworks",
+            "description": "Express.js, FastAPI, Django, or Spring Boot",
+            "estimatedTime": "4-6 weeks",
+            "resources": [
+                {
+                    "title": "FastAPI Full Course",
+                    "url": "https://www.youtube.com/watch?v=0sOvCWFmrtA",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "6h",
+                    "free": true
+                },
+                {
+                    "title": "Express.js Crash Course",
+                    "url": "https://www.youtube.com/watch?v=SccSCuHhOw0",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "1.5h",
+                    "free": true
+                },
+                {
+                    "title": "Django Docs",
+                    "url": "https://docs.djangoproject.com/en/stable/",
+                    "type": "docs",
+                    "platform": "Django",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "auth",
+            "label": "Authentication & Security",
+            "description": "JWT, OAuth, session management, and security best practices",
+            "estimatedTime": "2 weeks",
+            "resources": [
+                {
+                    "title": "JWT Authentication",
+                    "url": "https://www.youtube.com/watch?v=7Q17ubqLfaM",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "1h",
+                    "free": true
+                },
+                {
+                    "title": "OWASP Top 10",
+                    "url": "https://owasp.org/www-project-top-ten/",
+                    "type": "docs",
+                    "platform": "OWASP",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "caching",
+            "label": "Caching & Performance",
+            "description": "Redis, caching strategies, and performance optimization",
+            "estimatedTime": "1-2 weeks",
+            "resources": [
+                {
+                    "title": "Redis Crash Course",
+                    "url": "https://www.youtube.com/watch?v=jgpVdJB2sKQ",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "1h",
+                    "free": true
+                },
+                {
+                    "title": "Redis Documentation",
+                    "url": "https://redis.io/docs/",
+                    "type": "docs",
+                    "platform": "Redis",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "testing",
+            "label": "Testing",
+            "description": "Unit testing, integration testing, and test-driven development",
+            "estimatedTime": "2 weeks",
+            "resources": [
+                {
+                    "title": "Python Testing with Pytest",
+                    "url": "https://www.youtube.com/watch?v=cHYq1MRoyI0",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "2h",
+                    "free": true
+                },
+                {
+                    "title": "Testing Best Practices",
+                    "url": "https://github.com/goldbergyoni/javascript-testing-best-practices",
+                    "type": "article",
+                    "platform": "GitHub",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "docker",
+            "label": "Docker & Containers",
+            "description": "Containerization, Docker Compose, and container orchestration basics",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "Docker Full Course",
+                    "url": "https://www.youtube.com/watch?v=fqMOX6JJhGo",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "2h",
+                    "free": true
+                },
+                {
+                    "title": "Docker Docs",
+                    "url": "https://docs.docker.com/get-started/",
+                    "type": "docs",
+                    "platform": "Docker",
+                    "free": true
+                }
+            ]
+        },
+        {
+            "id": "deployment",
+            "label": "Deployment & CI/CD",
+            "description": "Cloud deployment, CI/CD pipelines, and production workflows",
+            "estimatedTime": "2-3 weeks",
+            "resources": [
+                {
+                    "title": "GitHub Actions CI/CD",
+                    "url": "https://www.youtube.com/watch?v=R8_veQiYBjI",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "1h",
+                    "free": true
+                },
+                {
+                    "title": "AWS for Beginners",
+                    "url": "https://www.youtube.com/watch?v=ulprqHHWlng",
+                    "type": "video",
+                    "platform": "YouTube",
+                    "duration": "3h",
+                    "free": true
+                }
+            ]
+        }
+    ],
+    "edges": [
+        {
+            "source": "programming-basics",
+            "target": "git"
+        },
+        {
+            "source": "programming-basics",
+            "target": "databases"
+        },
+        {
+            "source": "databases",
+            "target": "apis"
+        },
+        {
+            "source": "apis",
+            "target": "frameworks"
+        },
+        {
+            "source": "frameworks",
+            "target": "auth"
+        },
+        {
+            "source": "frameworks",
+            "target": "caching"
+        },
+        {
+            "source": "auth",
+            "target": "testing"
+        },
+        {
+            "source": "caching",
+            "target": "testing"
+        },
+        {
+            "source": "testing",
+            "target": "docker"
+        },
+        {
+            "source": "docker",
+            "target": "deployment"
+        }
+    ]
+}
